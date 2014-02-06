@@ -25,34 +25,38 @@
 
   <?php include 'header.php'; ?>
 
-  <div class="col-sm-3 sidebar">
-      <div class="sidebar-title">
-        UX Designer
-      </div>
-      <div class="sidebar-title">
-        Web Developer
+  <div class="col-md-3 sidebar">
+      <div class="sidebar-picture">
+        <img src="img/Kevin.jpg" class="img-responsive">
       </div>
       <br />
       <div class="sidebar-title">
-        Chicago, IL
+        <span style="color:#D54040;">UX Designer</span>
+      </div>
+      <div class="sidebar-title">
+        <span style="color:#6C9F20;">Web Developer</span>
       </div>
       <br />
       <div class="sidebar-title">
-        UX Skills
+        <span style="color:#CACA77">Chicago, IL</span>
+      </div>
+      <br />
+      <div class="sidebar-title">
+        <span style="color:#9F2056">UX Skills</span>
       </div>
       <div class="sidebar-text">
-        Axure, Adobe Fireworks, Illustrator, Photoshop, Wireframes, Prototypes, Competitive Analysis, Site Maps, Personas, Usability Testing, HCI, Responsive Design, Mobile Design
+        Axure, Adobe Fireworks, Illustrator, Wireframes, Prototypes, HCI, Competitive Analysis, Site Maps, Personas, Usability Testing, Responsive Design, Mobile Design
       </div>
       <br />
       <div class="sidebar-title">
-        Programming Skills
+        <span style="color:#006B8E;">Programming Skills</span>
       </div>
       <div class="sidebar-text">
         HTML/CSS, Javascript, jQuery, Bootstrap, Python, Django, PHP, MySQL, Git
       </div>
       <br />
       <div class="sidebar-title">
-        Education
+        <span style="color:#B56400;">Education</span>
       </div>
       <div class="sidebar-text">
         Northern Illinois University
@@ -68,14 +72,17 @@
       </div>
       <br />
       <div class="sidebar-title">
-        Favorite Projects
+        <span style="color:#6C9F20;">Favorite Projects</span>
       </div>
       <div class="sidebar-text">
-        Educational Software, Productivity Software, Social Networks, Free/Open Source
+        Educational Software<br />
+        Free/Open Source Software<br />
+        Productivity Software<br />
+        Social Networks
       </div>
-  </div><!-- /.col-sm-3 side-bar -->
+  </div><!-- /.col-md-3 side-bar -->
 
-  <div class="col-sm-9 main">
+  <div class="col-md-9 main">
     <div class="main-project-inner">
       <div class="main-project-first color-everyvote">
         <i class="fa fa-check-square-o indent-everyvote"></i> EveryVote
@@ -93,12 +100,12 @@
         <i class="fa fa-book indent-advantage-act"></i> Advantage ACT
       </div>
       <div class="main-project color-top-video-timeline">
-        <i class="fa fa-film indent-advantage-act"></i> Top Video Timeline
+        <i class="fa fa-film indent-top-video-timeline"></i> Top Video Timeline
       </div>
       <div class="clearfix">
       </div>
     </div><!-- /.main-project-inner -->
-  </div><!-- /.col-sm-9 main -->
+  </div><!-- /.col-md-9 main -->
   <div class="clearfix">
   </div>
   <?php include 'footer.php'; ?>

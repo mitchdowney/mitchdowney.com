@@ -24,81 +24,24 @@
 <div class="container">
 
   <?php include 'header.php'; ?>
+  <div class="col-md-3 sidebar">
+    <div class="sidebar-headline">
+      EveryVote
+    </div>
+    <br />
+    <div class="sidebar-title">
+      Feb 2014
+    </div>
+    <div class="sidebar-text">
+      Candidate Page
+    </div>
+  </div><!-- /.col-md-3 side-bar -->
 
-  <div class="col-sm-3 sidebar">
-      <div class="sidebar-title">
-        UX Designer
-      </div>
-      <div class="sidebar-title">
-        Web Developer
-      </div>
-      <br />
-      <div class="sidebar-title">
-        Chicago, IL
-      </div>
-      <br />
-      <div class="sidebar-title">
-        UX Skills
-      </div>
-      <div class="sidebar-text">
-        Axure, Adobe Fireworks, Illustrator, Photoshop, Wireframes, Prototypes, Competitive Analysis, Site Maps, Personas, Usability Testing, HCI, Responsive Design, Mobile Design
-      </div>
-      <br />
-      <div class="sidebar-title">
-        Programming Skills
-      </div>
-      <div class="sidebar-text">
-        HTML/CSS, Javascript, jQuery, Bootstrap, Python, Django, PHP, MySQL, Git
-      </div>
-      <br />
-      <div class="sidebar-title">
-        Education
-      </div>
-      <div class="sidebar-text">
-        Northern Illinois University
-      </div>
-      <div class="sidebar-subtext">
-        M.S.Ed. Instructional Technology
-      </div>
-      <div class="sidebar-text">
-        University of Illinois
-      </div>
-      <div class="sidebar-subtext">
-        BA English & Philosophy
-      </div>
-      <br />
-      <div class="sidebar-title">
-        Favorite Projects
-      </div>
-      <div class="sidebar-text">
-        Educational Software, Productivity Software, Social Networks, Free/Open Source
-      </div>
-  </div><!-- /.col-sm-3 side-bar -->
-
-  <div class="col-sm-9 main">
-    <div class="main-project-inner">
-      <div class="main-project-first color-everyvote">
-        <i class="fa fa-check-square-o indent-everyvote"></i> EveryVote
-      </div>
-      <div class="main-project color-partystarter">
-        <i class="fa fa-group indent-partystarter"></i> PartyStarter
-      </div>
-      <div class="main-project color-earthhq">
-        <i class="fa fa-globe indent-earthhq"></i> EarthHQ
-      </div>
-      <div class="main-project color-spotcheck">
-        <i class="fa fa-road indent-spotcheck"></i> SpotCheck
-      </div>
-      <div class="main-project color-advantage-act">
-        <i class="fa fa-book indent-advantage-act"></i> Advantage ACT
-      </div>
-      <div class="main-project color-top-video-timeline">
-        <i class="fa fa-film indent-advantage-act"></i> Top Video Timeline
-      </div>
-      <div class="clearfix">
-      </div>
-    </div><!-- /.main-project-inner -->
-  </div><!-- /.col-sm-9 main -->
+  <div class="col-md-9 main">
+    <div class="main-viewer">
+      
+    </div><!-- /.main-viewer -->
+  </div><!-- /.col-md-9 main -->
   <div class="clearfix">
   </div>
   <?php include 'footer.php'; ?>
