@@ -1,0 +1,163 @@
+body {
+    background:#000;
+    margin:25px 0;
+    font-family:'Roboto', sans-serif;
+    color:#151515;
+}
+
+.container {
+    max-width:1260px;
+    padding:0 15px;
+}
+
+.header-left {
+    margin:0 0 25px 0;
+    padding:10px 20px;
+    background:#CACACA;
+    font-size:24px;
+}
+
+.header-right {
+    margin:0 0 25px 0;
+    padding:10px 20px;
+    background:#CACACA;
+    font-size:24px;
+}
+
+.header-brand {
+}
+
+.header-social {
+    float:right;
+}
+
+.header-social-icon {
+    display:inline-block;
+    margin:0 0 0 10px;
+}
+
+.header-nav {
+    float:left;
+}
+
+.header-nav-button {
+    display:inline-block;
+    float:right;
+    margin:0 30px 0 0;
+}
+
+.sidebar {
+    padding:25px 20px;
+    background:#CACACA;
+    color:#151515;
+}
+
+.sidebar-title {
+    font-size:18px;
+    font-weight:bold;
+}
+
+.sidebar-text {
+    font-size:15px;
+}
+
+.sidebar-subtext {
+    margin:0 0 0 20px;
+    font-size:14px;
+    font-style:italic;
+}
+
+@media (max-width:767px) {
+    .main {
+        padding-top:25px;
+        padding-right:0;
+        padding-left:0;
+        color:#CACACA;
+    }
+}
+
+@media (min-width:768px) {
+    .main {
+        padding-right:0;
+        padding-left:25px;
+        color:#CACACA;
+    }
+}
+
+.main-project-inner {
+    border:1px solid #838383;
+}
+
+@media (max-width:767px) {
+    .main-project-first {
+        padding:10px 20px;
+        font-size:64px;
+    }
+}
+
+@media (min-width:768px) {
+    .main-project-first {
+        padding:10px 40px;
+        font-size:64px;
+    }
+}
+
+@media (max-width:767px) {
+    .main-project {
+        padding:10px 20px;
+        font-size:64px;
+        border-top:1px dotted #838383;
+    }
+}
+
+@media (min-width:768px) {
+    .main-project {
+        padding:10px 40px;
+        font-size:64px;
+        border-top:1px dotted #838383;
+    }
+}
+
+.color-everyvote:hover {
+    color:#952020;
+}
+
+.color-partystarter:hover {
+    color:#006B8E;
+}
+
+.color-earthhq:hover {
+    color:#365010;
+}
+
+.color-spotcheck:hover {
+    color:#B56400;
+}
+
+.color-advantage-act:hover {
+    color:#50102C;
+}
+
+.color-top-video-timeline:hover {
+    color:#6C9F20;
+}
+
+.indent-everyvote {
+    margin:0 10px 0 0;
+}
+
+.indent-partystarter {
+    margin:0 1px 0 0;
+}
+
+.indent-earthhq {
+    margin:0 14px 0 0;
+}
+
+.indent-spotcheck {
+
+}
+
+.indent-advantage-act {
+    margin:0 7px 0 0;
+}
