@@ -1,7 +1,7 @@
 body {
     background:#000;
     color:#151515;
-    padding:30px 0;
+    padding:15px 0 0 0;
 }
 
 @media (max-width:991px) {
@@ -26,15 +26,15 @@ body {
 
 .mitchdowney {
     font-size:24px;
+    font-weight:bold;
     color:#c7c7c7;
-    margin:0 0 20px 0;
+    margin:15px 0;
 }
 
 .mitchdowney-contact {
-    float:right;
-    padding:0 5px;
     font-size:24px;
     color:#c7c7c7;
+    margin:0 0 20px 0;
 }
 
 @media (max-width:991px) {
@@ -46,6 +46,8 @@ body {
 
 @media (min-width:992px) {
     .sidebar {
+        float:left;
+        clear:left;
         color:#c7c7c7;
         border-radius:10px;
     }
@@ -89,8 +91,9 @@ body {
 
 @media (min-width:992px) {
     .main {
-        padding:0 20px;
+        padding:0 0 0 60px;
         color:#151515;
+        float:right;
     }
 }
 
@@ -108,7 +111,7 @@ body {
 
 @media (min-width:992px) {
     .main-project-first {
-        margin:-5px 0 10px 0;
+        padding:10px 0;
         font-size:44px;
         color:#c7c7c7;
         font-family:'Roboto', serif;
@@ -126,10 +129,11 @@ body {
 
 @media (min-width:992px) {
     .main-project {
-        margin:0 0 10px 0;
+        padding:10px 0;
         font-size:44px;
         color:#c7c7c7;
         font-family:'Roboto', serif;
+        border-top:1px dotted #838383;
     }
 }
 
@@ -154,21 +158,21 @@ body {
 }
 
 .indent-everyvote {
-    margin:0 0 0 236px;
+    margin:0 0 0 256px;
 }
 
 .indent-partystarter {
-    margin:0 0 0 190px;
+    margin:0 0 0 210px;
 }
 
 .indent-earthhq {
-    margin:0 0 0 271px;
+    margin:0 0 0 290px;
 }
 
 .indent-advantage-act {
-    margin:0 0 0 129px;
+    margin:0 0 0 149px;
 }
 
 .indent-top-video-timeline {
-    margin:0 0 0 50px;
+    margin:0 0 0 70px;
 }

@@ -23,15 +23,34 @@
 
 <div class="container">
 
+
+    <div class="col-md-9 main">
+      <div class="main-project-inner">
+        <div class="main-project-first color-everyvote">
+          EveryVote <i class="fa fa-check-square-o indent-everyvote"></i>
+        </div>
+        <div class="main-project color-partystarter">
+          PartyStarter <i class="fa fa-group indent-partystarter"></i> 
+        </div>
+        <div class="main-project color-earthhq">
+          EarthHQ <i class="fa fa-globe indent-earthhq"></i>
+        </div>
+        <div class="main-project color-advantage-act">
+          Advantage ACT <i class="fa fa-book indent-advantage-act"></i>
+        </div>
+        <div class="main-project color-top-video-timeline">
+          Top Video Timeline <i class="fa fa-film indent-top-video-timeline"></i>
+        </div>
+        <div class="clearfix">
+        </div>
+      </div><!-- /.main-project-inner -->
+    </div><!-- /.col-md-9 main -->
+
   <?php include 'header.php'; ?>
-  <div class="row">
+
     <div class="col-md-3 sidebar">
         <div class="sidebar-title">
-          UX Developer
-        </div>
-        <br />
-        <div class="sidebar-title">
-          <span style="color:#c7c7c7; font-weight:normal;">Chicago, IL</span>
+          <span style="color:#c7c7c7; font-style:italic; font-weight:normal;">Chicago, IL</span>
         </div>
         <br />
         <div class="sidebar-title">
@@ -65,7 +84,7 @@
         </div>
         <br />
         <div class="sidebar-title">
-          <span style="color:#6C9F20;">Interests</span>
+          <span style="color:#6C9F20;">Experience</span>
         </div>
         <div class="sidebar-text">
           Educational Software<br />
@@ -74,30 +93,7 @@
           Social Networks
         </div>
     </div><!-- /.col-md-3 side-bar -->
-    <div class="col-md-9 main">
-      <div class="main-project-inner">
-        <div class="main-project-first color-everyvote">
-          EveryVote <i class="fa fa-check-square-o indent-everyvote"></i>
-        </div>
-        <div class="main-project color-partystarter">
-          PartyStarter <i class="fa fa-group indent-partystarter"></i> 
-        </div>
-        <div class="main-project color-earthhq">
-          EarthHQ <i class="fa fa-globe indent-earthhq"></i>
-        </div>
-        <div class="main-project color-advantage-act">
-          Advantage ACT <i class="fa fa-book indent-advantage-act"></i>
-        </div>
-        <div class="main-project color-top-video-timeline">
-          Top Video Timeline <i class="fa fa-film indent-top-video-timeline"></i>
-        </div>
-        <div class="clearfix">
-        </div>
-      </div><!-- /.main-project-inner -->
-    </div><!-- /.col-md-9 main -->
-    <div class="clearfix">
-    </div>
-  </div><!-- /.row -->
+
   <?php include 'footer.php'; ?>
   
 </div><!-- /.container -->
