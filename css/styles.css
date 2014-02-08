@@ -1,56 +1,83 @@
 body {
     background:#000;
-    color:#151515;
-    padding:15px 0 0 0;
+    color:#c7c7c7;
+    padding:15px 0;
+    font-family:'Roboto', sans-serif;
 }
 
 @media (max-width:991px) {
-    .container {
+    .md-container {
         font-family:'Roboto', sans-serif;
+        padding:0 5px;
     }
 }
 
 @media (min-width:992px) {
-    .container {
-        padding:0 30px;
+    .md-container {
+        padding:0 5px;
         font-family:'Roboto', sans-serif;
+        margin-right:auto;
+        margin-left:auto;
+        max-width:1160px
     }
 }
 
-.navbar {
-    font-size:24px;
-    font-family:'Roboto', serif;
-    background-color:#000;
-    color:#c7c7c7;
+.header {
+    border-bottom:1px dotted #454545;
 }
 
-.mitchdowney {
+.mitchdowney a {
+    margin:0 0 15px 0;
     font-size:24px;
     font-weight:bold;
     color:#c7c7c7;
-    margin:15px 0;
 }
 
-.mitchdowney-contact {
-    font-size:24px;
-    color:#c7c7c7;
-    margin:0 0 20px 0;
+.mitchdowney a:hover {
+    font-weight:bold;
+    color:#eee;
+    text-decoration:none;
+}
+
+@media (max-width:559px) {
+    .mitchdowney-navbar {
+        float:left;
+        clear:left;
+        margin:0 0 15px 0;
+        font-size:24px;
+        font-weight:bold;
+        color:#c7c7c7;
+        text-align:left;
+    }
+}
+
+@media (min-width:560px) {
+    .mitchdowney-navbar {
+        float:right;
+        margin:0 0 15px 0;
+        font-size:24px;
+        font-weight:bold;
+        color:#c7c7c7;
+        text-align:right;
+    }
 }
 
 @media (max-width:991px) {
     .sidebar {
         color:#c7c7c7;
-        border-radius:10px;
+        padding:0 15px;
     }
 }
 
 @media (min-width:992px) {
     .sidebar {
-        float:left;
-        clear:left;
         color:#c7c7c7;
-        border-radius:10px;
     }
+}
+
+.sidebar hr {
+    margin:10px 0 20px 0;
+    border-top:1px dotted #454545;
 }
 
 .sidebar-picture {
@@ -65,16 +92,19 @@ body {
 
 .sidebar-headline {
     font-size:24px;
-    font-weight:bold;
+    padding:20px 0 0 0;
 }
 
 .sidebar-title {
     font-size:20px;
-    font-family:'Roboto', serif;
 }
 
 .sidebar-text {
     font-size:16px;
+}
+
+.sidebar-text ul {
+    padding:0 0 0 30px;
 }
 
 .sidebar-subtext {
@@ -85,94 +115,185 @@ body {
 
 @media (max-width:991px) {
     .main {
-        color:#c7c7c7;
     }
 }
 
 @media (min-width:992px) {
     .main {
-        padding:0 0 0 60px;
-        color:#151515;
+        padding:0 15px;
+    }
+}
+
+.main hr {
+    margin:10px 0 20px 0;
+    border-top:1px dotted #454545;
+}
+
+.main-headline {
+    font-size:32px;
+    margin:15px 0 0 0;
+}
+
+.main-sub-headline {
+    font-size:28px;
+}
+
+.main-title {
+    font-size:20px;
+}
+
+.main-text {
+    font-size:16px;
+}
+
+.main-prev {
+    float:right;
+    margin:5px 15px 15px 15px;
+    font-size:20px;
+}
+
+.main-next {
+    float:right;
+    margin:5px 0 15px 15px;
+    font-size:20px;
+}
+
+.main-img {
+    clear:both;
+    margin:15px 0;
+}
+
+@media (max-width:991px) {
+    .main-project-first {
+        padding:15px 0;
+        font-size:32px;
+        border-top:1px dotted #454545;
+        border-bottom:1px dotted #454545;
+        color:#c7c7c7;
+        font-family:'Roboto', serif;
+    }
+}
+
+@media (min-width:992px) {
+    .main-project-first {
+        padding:15px 0;
+        font-size:32px;
+        color:#c7c7c7;
+        font-family:'Roboto', serif;
+        border-bottom:1px dotted #454545;
+    }
+}
+
+@media (max-width:991px) {
+    .main-project {
+        padding:15px 0;
+        font-size:32px;
+        border-bottom:1px dotted #454545;
+        color:#c7c7c7;
+        font-family:'Roboto', serif;
+    }
+}
+
+@media (min-width:992px) {
+    .main-project {
+        padding:15px 0;
+        font-size:32px;
+        color:#c7c7c7;
+        font-family:'Roboto', serif;
+        border-bottom:1px dotted #454545;
+    }
+}
+
+@media (max-width:559px) {
+    .main-project-icon {
+        display:none;
+    }
+}
+
+@media (min-width:560px) {
+    .main-project-icon {
         float:right;
+        clear:right;
+        margin:10px 0;
     }
 }
 
-.main-project-inner {
-}
-
-@media (max-width:991px) {
-    .main-project-first {
-        border-top:1px dotted #454545;
-        font-size:44px;
-        color:#c7c7c7;
-        font-family:'Roboto', serif;
-    }
-}
-
-@media (min-width:992px) {
-    .main-project-first {
-        padding:10px 0;
-        font-size:44px;
-        color:#c7c7c7;
-        font-family:'Roboto', serif;
-    }
-}
-
-@media (max-width:991px) {
-    .main-project {
-        font-size:44px;
-        border-top:1px dotted #454545;
-        color:#c7c7c7;
-        font-family:'Roboto', serif;
-    }
-}
-
-@media (min-width:992px) {
-    .main-project {
-        padding:10px 0;
-        font-size:44px;
-        color:#c7c7c7;
-        font-family:'Roboto', serif;
-        border-top:1px dotted #838383;
-    }
-}
-
-.color-everyvote:hover {
+.color-everyvote {
     color:#D54040;
 }
 
-.color-partystarter:hover {
-    color:#6C9F20;
+.color-everyvote-hover:hover {
+    color:#D54040;
 }
 
-.color-earthhq:hover {
+.color-partystarter {
     color:#006B8E;
 }
 
-.color-advantage-act:hover {
-    color:#B56400;
+.color-partystarter-hover:hover {
+    color:#006B8E;
 }
 
-.color-top-video-timeline:hover {
+.color-earthhq {
+    color:#6C9F20;
+}
+
+.color-earthhq-hover:hover {
+    color:#6C9F20;
+}
+
+.color-advantage-act {
     color:#9F2048;
 }
 
-.indent-everyvote {
-    margin:0 0 0 256px;
+.color-advantage-act-hover:hover {
+    color:#9F2048;
 }
 
-.indent-partystarter {
-    margin:0 0 0 210px;
+.color-top-video-timeline {
+    color:#B56400;
 }
 
-.indent-earthhq {
-    margin:0 0 0 290px;
+.color-top-video-timeline-hover:hover {
+    color:#B56400;
 }
 
-.indent-advantage-act {
-    margin:0 0 0 149px;
+.color-twitter {
+    color:#00acee;
 }
 
-.indent-top-video-timeline {
-    margin:0 0 0 70px;
+.color-twitter-hover:hover {
+    color:#00acee;
+}
+
+.color-github {
+    color:#171515;
+}
+
+.color-github-hover:hover {
+    color:#171515;
+}
+
+.color-facebook {
+    color:#3b5998;
+}
+
+.color-facebook-hover:hover {
+    color:#3b5998;
+}
+
+.color-linkedin {
+    color:#0e76a8;
+}
+
+.color-linkedin-hover:hover {
+    color:#0e76a8;
+}
+
+.color-contact {
+    color:#454545;
+}
+
+.color-contact-hover:hover {
+    color:#454545;
 }
