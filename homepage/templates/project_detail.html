@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}{{ project.name }}{% endblock %}
+
+{% block main-div %}
+  
+  <div class="main-headline color-{{ project.name|lower }}">
+    {{ project.name }}EveryVote 
+    {% for item in project.item_set.all|slice:":1" %}
+    {% endfor %}
+    {% for item in next_items|slice:":1" %}
+      {{ item.name }} / {{ item.date }} / {{ item.date }}
+    {% endfor %}
+  </div>    
+  
+  <div class="main-next">
+    {% for item in next_items|slice:":1" %}
+    <a href="/items/{{ item.id }}"> Next ></a>
+    {% endfor %}
+  </div>
+  
+  <div class="main-prev">
+    {% for item in previous_items|dictsortreversed:"id"|slice:":1" %}
+    <a href="/items/{{ item.id }}">< Prev</a>
+    {% endfor %}
+  </div>
+  
+  <div class="main-sub-headline">
+    {{ item.date }} - {{ item.name }}
+  </div>
+  
+  <div class="main-img">
+    <a href="{{ item.image.url }}"><img class="img-responsive" src="{{ item.image.url }}"></a>
+  </div>
+  
+{% endblock %}
+
+{% block side-div %}
+
+  <div class="sidebar-headline">
+    Archive
+  </div>
+  
+  <div class="sidebar-title">
+    February 2014
+  </div>
+  
+  <div class="sidebar-text">
+    <ul>
+      {% for item in all_items %}
+      <li><a href="/item/{{ item.id }}">{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  
+{% endblock %}

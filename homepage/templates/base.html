@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>{% block title %}mitchdowney.com{% endblock %}</title>
+
+  <meta charset=”utf-8”> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <meta property="og:url" content="#" />
+  <meta property="og:title" content="#" />
+  <meta property="og:description" content="#" />
+  <meta property="og:image" content="#" />
+    
+  <link href="{% static "css/bootstrap.min.css" %}" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static "font-awesome-4.0.3/css/font-awesome.min.css" %}">
+  <link href="{% static "css/styles.css" %}" type="text/css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+  <script src="{% static "js/jquery-1.11.0.min.js" %}"></script>
+  <script src="{% static "js/bootstrap.js" %}"></script>
+
+</head>
+  
+<body>
+
+<div class="md-container">
+
+  {% block navbar %}
+  
+    <div class="col-md-3 pull-left">
+      
+      <div class="mitchdowney">
+        <a href="/">Mitch Downey</a><br /> 
+        <a href="https://www.twitter.com/m_downey"><i class="fa fa-twitter-square color-twitter-hover"></i></a> &nbsp &nbsp <a href="http://www.github.com/themitchuation"><i class="fa fa-github-square color-github-hover"></i></a> &nbsp &nbsp <a href="http://www.linkedin.com/in/mitchdowney/"><i class="fa fa-linkedin-square color-linkedin-hover"></i></a> &nbsp &nbsp <a href="MAILTO:me@mitchdowney.com"><i class="fa fa-envelope-o color-contact-hover"></i></a>
+        <div class="clearfix"></div>
+       
+      </div>
+      
+    </div><!-- /.col-md-3 -->
+    
+    <div class="col-md-9">
+      
+      <div class="mitchdowney-navbar">
+        <a style="color:#CACA77;text-decoration:none;" href="index.php">Portfolio <i class="fa fa-folder-o"></i></a><br />
+        
+        {% for projectLink in projectLinks %}
+          {% ifequal projectLink.name project_name %}
+            &nbsp <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name|lower }}"><i class="fa {{ projectLink.font_awesome_class }}"></i></a>
+          {% else %}
+            &nbsp <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name|lower }}-hover"><i class="fa {{ projectLink.font_awesome_class }}"></i></a>
+          {% endifequal %}
+        {% endfor %}
+
+      </div><!-- /.mitchdowney-navbar -->
+
+    </div><!-- /.col-md-9 -->
+  
+    <div class="clearfix">
+    </div>
+
+    <div class="col-xs-12">
+      <div class="header">
+      </div><!-- /.header -->
+    </div>
+    
+  {% endblock %}
+  
+  <div class="clearfix">
+  </div>
+  
+  <div class="md-body">
+  
+    {% block main-div %}
+
+    {% endblock %}
+
+    {% block 1-side-div %}
+
+    {% endblock %}
+    
+    {% block 2-side-div %}
+    
+    {% endblock %}
+    
+      </div><!-- /.sidebar-box -->
+      
+    </div><!-- /.col-md-3 sidebar -->
+
+  </div><!-- /.md-body -->
+  
+</div><!-- /.md-container -->
+
+</body>
+
+</html>

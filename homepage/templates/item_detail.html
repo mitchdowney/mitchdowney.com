@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}{{ item.project.name }} - {{ item.name }} - {{ item.date }}{% endblock %}
+
+{% block main-div %}
+  
+  <div class="col-md-9 main">
+
+    {% with item.get_previous_by_date as next %}
+      {% if next %}
+        <div class="main-next">
+          <a href="{{ next.get_absolute_url }}">Next ></a>
+        </div>
+      {% else %}
+        <div class="main-next">
+          <a>Next ></a>
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    {% with item.get_next_by_date as prev %}
+      {% if prev %}
+        <div class="main-prev">
+          <a href="{{ prev.get_absolute_url }}">< Prev</a>
+        </div>
+      {% else %}
+        <div class="main-prev">
+          <a>< Prev</a>
+        </div>
+      {% endif %}
+
+    {% endwith %}
+        
+    <div class="main-headline color-{{ item.project.name|lower }}">
+      {{ item.project.name }}
+    </div>
+    
+    <div class="main-sub-headline">
+      {{ item.name }} <br />
+      {{ item.date }}
+    </div>
+    
+    <div class="main-box">
+      <div class="main-img">
+        <a href="{{ item.image.url }}"><img class="img-responsive" src="{{ item.image.url }}"></a>
+      </div>
+    </div><!-- /.main-box -->
+
+  </div><!-- /.col-md-9 main -->
+  
+{% endblock %}
+
+{% block 1-side-div %}
+
+  <div class="col-md-3">
+    <div class="sidebar">
+      <div class="sidebar-headline">
+        Archive
+      </div>
+        
+      {% regroup all_items by date|date:"F j Y" as items_by_date %}
+
+      {% for item in items_by_date reversed %}
+        <div class="sidebar-title">
+          {{ item.grouper }}
+        </div>
+        <div class="sidebar-item">
+          {% for i in item.list %}
+            <a href="/items/{{ i.id }}">{{ i.name }}</a><br />
+          {% endfor %}
+        </div>
+      {% endfor %}
+      
+    </div><!-- /.sidebar -->
+    
+  </div><!-- /.col-md-3 -->
+  
+{% endblock %}

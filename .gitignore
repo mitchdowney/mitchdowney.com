@@ -1,0 +1,10 @@
+settings.py
+
+database.sqlite
+
+*.pyc
+
+
+
+# Hide uploads folder
+homepage/static/media

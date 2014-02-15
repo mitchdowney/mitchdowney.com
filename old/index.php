@@ -16,7 +16,7 @@
   <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="font-awesome-4.0.3/css/font-awesome.min.css">
   <link href="css/styles.css" type="text/css" rel="stylesheet">
-
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
   <script src="js/jquery-1.11.0.min.js"></script>
   <script src="js/bootstrap.js"></script>
 
