@@ -43,7 +43,7 @@ class Item(models.Model):
     link_text = models.CharField(max_length=200)
     
     def __unicode__(self):
-        return u'%s' % (self.name)
+        return u'%s - %s' % (self.name, self.project.name)
         
     def get_absolute_url(self):
         return reverse('item_detail', kwargs={'pk': str(self.id)})
