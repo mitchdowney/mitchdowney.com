@@ -17,11 +17,28 @@ class Project(models.Model):
     def get_absolute_url(self):
         return reverse('project_detail', kwargs={'pk': str(self.id)})
 
+class Tool(models.Model):
+    name = models.CharField(max_length=100)
+
+    def __unicode__(self):
+        return u'%s' % (self.name)
+
+class Type(models.Model):
+    name = models.CharField(max_length=100)
+    
+    def __unicode__(self):
+        return u'%s' % (self.name)
+        
+    def get_absolute_url(self):
+        return reverse('tool_detail', kwargs={'pk': str(self.id)})
+
 class Item(models.Model):
     project = models.ForeignKey(Project)
     name = models.CharField(max_length=100)
     date = models.DateField()
     image = models.ImageField(upload_to=get_upload_file_name)
+    tools = models.ManyToManyField(Tool, related_name='tools', blank=True)
+    types = models.ManyToManyField(Type, related_name='types', blank=True)
     
     def __unicode__(self):
         return u'%s' % (self.name)

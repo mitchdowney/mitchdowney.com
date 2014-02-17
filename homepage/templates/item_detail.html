@@ -4,49 +4,79 @@
 
 {% block main-div %}
   
-  <div class="col-md-9 main">
+  <div class="col-md-9">
 
-    {% with item.get_previous_by_date as next %}
-      {% if next %}
-        <div class="main-next">
-          <a href="{{ next.get_absolute_url }}">Next ></a>
-        </div>
-      {% else %}
-        <div class="main-next">
-          <a>Next ></a>
-        </div>
-      {% endif %}
-    {% endwith %}
-
-    {% with item.get_next_by_date as prev %}
-      {% if prev %}
-        <div class="main-prev">
-          <a href="{{ prev.get_absolute_url }}">< Prev</a>
-        </div>
-      {% else %}
-        <div class="main-prev">
-          <a>< Prev</a>
-        </div>
-      {% endif %}
-
-    {% endwith %}
-        
-    <div class="main-headline color-{{ item.project.name|lower }}">
-      {{ item.project.name }}
-    </div>
+    <div class="main">
     
-    <div class="main-sub-headline">
-      {{ item.name }} <br />
-      {{ item.date }}
-    </div>
-    
-    <div class="main-box">
-      <div class="main-img">
-        <a href="{{ item.image.url }}"><img class="img-responsive" src="{{ item.image.url }}"></a>
+    <div class="main-top">
+      {% with item.get_previous_by_date as next %}
+        {% if next %}
+          <div class="main-next">
+            <a href="{{ next.get_absolute_url }}">Next ></a>
+          </div>
+        {% else %}
+          <div class="main-next">
+            <a>Next ></a>
+          </div>
+        {% endif %}
+      {% endwith %}
+
+      {% with item.get_next_by_date as prev %}
+        {% if prev %}
+          <div class="main-prev">
+            <a href="{{ prev.get_absolute_url }}">< Prev</a>
+          </div>
+        {% else %}
+          <div class="main-prev">
+            <a>< Prev</a>
+          </div>
+        {% endif %}
+
+      {% endwith %}
+          
+      <div class="main-headline color-{{ item.project.name|lower }}">
+        {{ item.project.name }}
       </div>
-    </div><!-- /.main-box -->
+      
+      <div class="main-sub-headline">
+        {{ item.name }} 
+      </div>
 
-  </div><!-- /.col-md-9 main -->
+      <div class="main-info">
+        <big><strong>Date:</strong> {{ item.date }}</big>
+      </div>
+
+      <div class="main-info">
+        <strong>Tools:</strong>
+        {% for tool in item.tools.all %}
+          {% if forloop.last %}
+            {{ tool.name }}
+          {% else %}
+            {{ tool.name }},
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="main-info">
+        <strong>Category:</strong>
+        {% for type in item.types.all %}
+          {% if forloop.last %}
+            {{ type.name }}
+          {% else %}
+            {{ type.name }},
+          {% endif %}
+        {% endfor %}
+      </div>
+      
+      </div><!-- /.main-top -->
+      
+      <div class="main-bottom">
+        <div class="main-img">
+          <a href="{{ item.image.url }}"><img class="img-responsive" src="{{ item.image.url }}"></a>
+        </div>
+      </div><!-- /.main-bottom -->
+    </div><!-- /.main -->
+  </div><!-- /.col-md-9 -->
   
 {% endblock %}
 

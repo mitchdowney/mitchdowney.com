@@ -39,11 +39,11 @@ a:hover {
 }
 
 .header {
-    border-bottom:1px solid #151515;
+    border-bottom:1px solid #303030;
 }
 
 .mitchdowney {
-    margin:0 0 10px 0;
+    margin:0 0 10px 5;
     padding:0 0 10px 0;
 }
 
@@ -60,27 +60,13 @@ a:hover {
     text-decoration:none;
 }
 
-@media (max-width:559px) {
-    .mitchdowney-navbar {
-        float:left;
-        clear:left;
-        margin:0 0 15px 0;
-        font-size:24px;
-        font-weight:bold;
-        color:#c7c7c7;
-        text-align:left;
-    }
-}
-
-@media (min-width:560px) {
-    .mitchdowney-navbar {
-        float:right;
-        margin:0 0 15px 0;
-        font-size:24px;
-        font-weight:bold;
-        color:#c7c7c7;
-        text-align:right;
-    }
+.mitchdowney-navbar {
+    float:right;
+    margin:0 0 15px 0;
+    font-size:24px;
+    font-weight:bold;
+    color:#c7c7c7;
+    text-align:right;
 }
 
 @media (min-width:991px) {
@@ -91,7 +77,6 @@ a:hover {
 
 @media (min-width:992px) {
     .md-body {
-        margin:15px 0 0 0;
     }
 }
 
@@ -102,7 +87,7 @@ a:hover {
 
 @media (min-width:992px) {
     .main {
-        padding-right:30px;
+        margin:15px 0 0 0;
     }
 }
 
@@ -111,25 +96,29 @@ a:hover {
     border-top:1px dotted #454545;
 }
 
-@media (max-width:991px) {
-    .main-box {
+.main-top {
+    padding:0 0 20px 0;
+    border-bottom:1px dotted #303030;
+}
 
+@media (max-width:767px) {
+    .main-headline {
+        clear:both;
+        margin:-5px 0;
+        font-size:48px;
     }
 }
 
-@media (min-width:992px) {
-    .main-box {
-        margin:15px 0 0 0;
+@media (min-width:768px) {
+    .main-headline {
+        margin:-5px 0;
+        font-size:48px;
     }
-}
-
-.main-headline {
-    margin:-5px 0;
-    font-size:48px;
 }
 
 .main-sub-headline {
-    font-size:32px;
+    margin:5px 0 10px 0;
+    font-size:28px;
 }
 
 .main-title {
@@ -140,25 +129,65 @@ a:hover {
     font-size:16px;
 }
 
-.main-prev {
-    width:70px;
-    float:right;
-    margin:15px;
-    font-size:20px;
-    text-align:left;
+@media (max-width:767px) {
+     .main-prev {
+         width:70px;
+         float:left;
+         margin:15px 15px 5px 0;
+         font-size:20px;
+         text-align:left;
+     }
 }
 
-.main-next {
-    width:70px;
-    float:right;
-    margin:15px 0 15px 15px;
-    font-size:20px;
-    text-align:right;
+@media (min-width:768px) {
+     .main-prev {
+         width:70px;
+         float:right;
+         margin:20px;
+         font-size:20px;
+         text-align:left;
+     }
+}
+
+@media (max-width:767px) {
+    .main-next {
+        width:70px;
+        float:right;
+        margin:15px 0 5px 15px;
+        font-size:20px;
+        text-align:right;
+    }
+}
+
+@media (min-width:768px) {
+    .main-next {
+        width:70px;
+        float:right;
+        margin:20px 5px 20px 20px;
+        font-size:20px;
+        text-align:right;
+    }
+}
+
+.main-info {
+    font-size:16px;
+    margin:0 0 10px 0;
+}
+
+@media (max-width:991px) {
+    .main-bottom {
+
+    }
+}
+
+@media (min-width:992px) {
+    .main-bottom {
+        padding:30px 0;
+    }
 }
 
 .main-img {
     clear:both;
-    margin:20px 0 30px 0;
 }
 
 .main-img img {
@@ -168,8 +197,7 @@ a:hover {
     .main-project-first {
         padding:15px 0;
         font-size:32px;
-        border-top:1px solid #151515;
-        border-bottom:1px solid #151515;
+        border-bottom:1px dotted #303030;
         color:#c7c7c7;
         font-family:'Roboto', serif;
     }
@@ -177,12 +205,11 @@ a:hover {
 
 @media (min-width:992px) {
     .main-project-first {
-        margin:-15px 0 0 0;
         padding:15px 0;
         font-size:32px;
         color:#c7c7c7;
         font-family:'Roboto', serif;
-        border-bottom:1px solid #151515;
+        border-bottom:1px dotted #303030;
     }
 }
 
@@ -190,7 +217,7 @@ a:hover {
     .main-project {
         padding:15px 0;
         font-size:32px;
-        border-bottom:1px solid #151515;
+        border-bottom:1px dotted #303030;
         color:#c7c7c7;
         font-family:'Roboto', serif;
     }
@@ -202,7 +229,7 @@ a:hover {
         font-size:32px;
         color:#c7c7c7;
         font-family:'Roboto', serif;
-        border-bottom:1px solid #151515;
+        border-bottom:1px dotted #303030;
     }
 }
 
@@ -223,13 +250,12 @@ a:hover {
 @media (max-width:991px) {
     .sidebar {
         color:#c7c7c7;
-        padding:0 15px;
     }
 }
 
 @media (min-width:992px) {
     .sidebar {
-        padding:0 15px 0 0;
+        margin:25px 0 0 0;
         color:#c7c7c7;
     }
 }
@@ -255,7 +281,7 @@ a:hover {
 }
 
 .sidebar-headline {
-    margin:15px 0 0 0;
+    margin:10px 0 0 0;
     font-size:24px;
     font-weight:bold;
     color:#CACA77;
