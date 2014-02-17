@@ -43,7 +43,7 @@ class Item(models.Model):
     link_text = models.CharField(max_length=200)
     
     class Meta:
-        ordering = ['-date']
+        ordering = ['date']
     
     
     def __unicode__(self):
