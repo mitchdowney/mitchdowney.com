@@ -39,6 +39,7 @@ class Item(models.Model):
     image = models.ImageField(upload_to=get_upload_file_name)
     tools = models.ManyToManyField(Tool, related_name='tools', blank=True)
     types = models.ManyToManyField(Type, related_name='types', blank=True)
+    link = models.URLField()
     
     def __unicode__(self):
         return u'%s' % (self.name)
