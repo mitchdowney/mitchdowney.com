@@ -42,8 +42,12 @@ class Item(models.Model):
     link = models.URLField()
     link_text = models.CharField(max_length=200)
     
+    class Meta:
+        ordering = ['date']
+    
+    
     def __unicode__(self):
-        return u'%s - %s - %s' % (self.name, self.project.name, self.date)
+        return u'%s - %s - %s' % (self.project.name, self.date, self.name)
         
     def get_absolute_url(self):
         return reverse('item_detail', kwargs={'pk': str(self.id)})
