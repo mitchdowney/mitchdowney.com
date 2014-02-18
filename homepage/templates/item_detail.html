@@ -99,7 +99,7 @@
           {{ item.grouper }}
         </div>
         <div class="sidebar-item">
-          {% for i in item.list %}
+          {% for i in item.list reversed %}
             {% ifequal i current_item %}
               <a href="/items/{{ i.id }}" style="color:#eee;">{{ i.name }}</a><br />
             {% else %}
