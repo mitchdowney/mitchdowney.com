@@ -39,8 +39,11 @@ class Item(models.Model):
     image = models.ImageField(upload_to=get_upload_file_name)
     tools = models.ManyToManyField(Tool, related_name='tools', blank=True)
     types = models.ManyToManyField(Type, related_name='types', blank=True)
-    link = models.URLField()
-    link_text = models.CharField(max_length=200)
+    link = models.URLField(blank=True)
+    link_text = models.CharField(max_length=200, blank=True)
+    
+    class Meta:
+        ordering = ['date']
     
     def __unicode__(self):
         return u'%s - %s - %s' % (self.project.name, self.date, self.name)
