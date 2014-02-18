@@ -10,7 +10,7 @@ def home(request):
     # Create project links
     for project in Project.objects.all():
         
-        first_item = project.item_set.order_by('-date').first()
+        first_item = project.item_set.order_by('-datetime').first()
         
         projectLink = {
             'name': project.name,

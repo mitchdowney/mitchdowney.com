@@ -18,17 +18,17 @@ class ItemDetailView(DetailView):
         
         context['project_name'] = project.name
         
-        context['previous_items'] = Item.objects.order_by('date').filter(project=project).filter(date__lt=self.get_object().date)
+        context['previous_items'] = Item.objects.order_by('datetime').filter(project=project).filter(datetime__lt=self.get_object().datetime)
             
-        context['next_items'] = Item.objects.order_by('date').filter(project=project).filter(date__gt=self.get_object().date)
+        context['next_items'] = Item.objects.order_by('datetime').filter(project=project).filter(datetime__gt=self.get_object().datetime)
         
-        context['all_items'] = Item.objects.order_by('date').filter(project=project)
+        context['all_items'] = Item.objects.order_by('name', 'datetime').filter(project=project)
             
         projectLinks = []
         
         for project in Project.objects.all():
         
-            first_item = project.item_set.order_by('-date').first()
+            first_item = project.item_set.order_by('name', 'datetime').first()
         
             projectLink = {
                 'name': project.name,

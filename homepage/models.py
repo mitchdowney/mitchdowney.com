@@ -35,7 +35,7 @@ class Type(models.Model):
 class Item(models.Model):
     project = models.ForeignKey(Project)
     name = models.CharField(max_length=100)
-    date = models.DateField()
+    datetime = models.DateTimeField()
     image = models.ImageField(upload_to=get_upload_file_name)
     tools = models.ManyToManyField(Tool, related_name='tools', blank=True)
     types = models.ManyToManyField(Type, related_name='types', blank=True)
@@ -43,10 +43,10 @@ class Item(models.Model):
     link_text = models.CharField(max_length=200, blank=True)
     
     class Meta:
-        ordering = ['date']
+        ordering = ['datetime']
     
     def __unicode__(self):
-        return u'%s - %s - %s' % (self.project.name, self.date, self.name)
+        return u'%s - %s - %s' % (self.project.name, self.datetime, self.name)
         
     def get_absolute_url(self):
         return reverse('item_detail', kwargs={'pk': str(self.id)})

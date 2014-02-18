@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}{{ item.project.name }} - {{ item.name }} - {{ item.date }}{% endblock %}
+{% block title %}{{ item.project.name }} - {{ item.name }} - {{ item.datetime }}{% endblock %}
 
 {% block main-div %}
   
@@ -9,7 +9,7 @@
     <div class="main">
     
     <div class="main-top">
-      {% with item.get_previous_by_date as next %}
+      {% with item.get_previous_by_datetime as next %}
         {% if next %}
           <div class="main-next">
             <a href="{{ next.get_absolute_url }}">Next ></a>
@@ -21,7 +21,7 @@
         {% endif %}
       {% endwith %}
 
-      {% with item.get_next_by_date as prev %}
+      {% with item.get_next_by_datetime as prev %}
         {% if prev %}
           <div class="main-prev">
             <a href="{{ prev.get_absolute_url }}">< Prev</a>
@@ -43,7 +43,7 @@
       </div>
 
       <div class="main-info">
-        <big><strong>Date:</strong> {{ item.date }}</big>
+        <big><strong>Date:</strong> {{ item.datetime|date:"F j Y" }}</big>
       </div>
 
       <div class="main-info">
@@ -92,14 +92,14 @@
         Archive
       </div>
         
-      {% regroup all_items by date|date:"F j Y" as items_by_date %}
+      {% regroup all_items by datetime|date:"F j Y" as items_by_datetime %}
 
-      {% for item in items_by_date reversed %}
+      {% for item in items_by_datetime reversed %}
         <div class="sidebar-title">
           {{ item.grouper }}
         </div>
         <div class="sidebar-item">
-          {% for i in item.list reversed %}
+          {% for i in item.list %}
             <a href="/items/{{ i.id }}">{{ i.name }}</a><br />
           {% endfor %}
         </div>
