@@ -47,7 +47,7 @@
       </div>
 
       <div class="main-info">
-        <strong>Example of:</strong>
+        <strong>This is a:</strong>
         {% for type in item.types.all %}
           {% if forloop.last %}
             {{ type.name }}
@@ -58,7 +58,7 @@
       </div>
 
       <div class="main-info">
-        <strong>Made With:</strong>
+        <strong>Made with:</strong>
         {% for tool in item.tools.all %}
           {% if forloop.last %}
             {{ tool.name }}
