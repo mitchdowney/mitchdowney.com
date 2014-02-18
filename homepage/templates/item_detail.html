@@ -91,7 +91,7 @@
       <div class="sidebar-headline">
         Archive
       </div>
-        
+
       {% regroup all_items by datetime|date:"F j Y" as items_by_datetime %}
 
       {% for item in items_by_datetime reversed %}
@@ -100,7 +100,11 @@
         </div>
         <div class="sidebar-item">
           {% for i in item.list %}
-            <a href="/items/{{ i.id }}">{{ i.name }}</a><br />
+            {% ifequal i current_item %}
+              <a href="/items/{{ i.id }}" style="color:#eee;">{{ i.name }}</a><br />
+            {% else %}
+              <a href="/items/{{ i.id }}">{{ i.name }}</a><br />
+            {% endifequal %}
           {% endfor %}
         </div>
       {% endfor %}

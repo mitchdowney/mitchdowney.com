@@ -16,6 +16,8 @@ class ItemDetailView(DetailView):
         context = super(ItemDetailView, self).get_context_data(**kwargs)
         project = self.get_object().project
         
+        context['current_item'] = self.get_object()
+        
         context['project_name'] = project.name
         
         context['previous_items'] = Item.objects.order_by('datetime').filter(project=project).filter(datetime__lt=self.get_object().datetime)
