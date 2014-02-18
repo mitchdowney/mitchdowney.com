@@ -19,8 +19,8 @@
   <link rel="stylesheet" type="text/css" href="{% static "font-awesome-4.0.3/css/font-awesome.min.css" %}">
   <link href="{% static "css/styles.css" %}" type="text/css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-  <script src="{% static "js/jquery-1.11.0.min.js" %}"></script>
-  <script src="{% static "js/bootstrap.js" %}"></script>
+  <script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
 
 </head>
   
@@ -84,12 +84,17 @@
     {% block right-side-div %}
     
     {% endblock %}
-    
-      </div><!-- /.sidebar-box -->
-      
-    </div><!-- /.col-md-3 sidebar -->
 
   </div><!-- /.md-body -->
+  
+{% block footer %}
+
+  <div class="col-xs-12">
+    <div class="md-footer">
+    </div>
+  </div>
+
+{% endblock %}<!-- /footer -->
   
 </div><!-- /.md-container -->
 
