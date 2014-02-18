@@ -87,10 +87,11 @@
 {% block right-side-div %}
 
   <div class="col-md-3">
+    <div class="sidebar-headline">
+      Archive
+    </div>
     <div class="sidebar">
-      <div class="sidebar-headline">
-        Archive
-      </div>
+
 
       {% regroup all_items by datetime|date:"F j Y" as items_by_datetime %}
       
