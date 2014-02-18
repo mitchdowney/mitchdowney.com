@@ -42,10 +42,6 @@ class Item(models.Model):
     link = models.URLField()
     link_text = models.CharField(max_length=200)
     
-    class Meta:
-        ordering = ['date']
-    
-    
     def __unicode__(self):
         return u'%s - %s - %s' % (self.project.name, self.date, self.name)
         
