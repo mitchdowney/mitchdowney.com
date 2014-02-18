@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, RedirectView
 from homepage.models import Project, Item
 from homepage.views.project import ProjectListView, ProjectDetailView
 from homepage.views.item import ItemListView, ItemDetailView
@@ -30,6 +30,10 @@ urlpatterns = patterns('',
         ),
         name="item_detail"),
 
+    # REDIRECT FROM MITCH'S OLD PORTFOLIO PAGE
+    url(r'^portfolio/$', RedirectView.as_view(url='/')),
+    url(r'^portfolio.html/$', RedirectView.as_view(url='/')),
+    
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
