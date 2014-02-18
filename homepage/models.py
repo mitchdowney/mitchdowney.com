@@ -43,7 +43,7 @@ class Item(models.Model):
     link_text = models.CharField(max_length=200, blank=True)
     
     class Meta:
-        ordering = ['datetime']
+        ordering = ['-datetime']
     
     def __unicode__(self):
         return u'%s - %s - %s' % (self.project.name, self.datetime, self.name)

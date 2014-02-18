@@ -93,7 +93,7 @@
       </div>
 
       {% regroup all_items by datetime|date:"F j Y" as items_by_datetime %}
-
+      
       {% for item in items_by_datetime reversed %}
         <div class="sidebar-title">
           {{ item.grouper }}

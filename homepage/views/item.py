@@ -24,7 +24,7 @@ class ItemDetailView(DetailView):
             
         context['next_items'] = Item.objects.order_by('datetime').filter(project=project).filter(datetime__gt=self.get_object().datetime)
         
-        context['all_items'] = Item.objects.order_by('name', 'datetime').filter(project=project)
+        context['all_items'] = Item.objects.order_by('datetime').filter(project=project)
             
         projectLinks = []
         
