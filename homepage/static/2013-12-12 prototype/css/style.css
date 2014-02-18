@@ -1,0 +1,2039 @@
+body {
+    background-image:url('../img/ev_crosshatch.png');
+    background-repeat:repeat;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color:#333;
+}
+
+.navbar, .navbar-default, .navbar-header {
+    margin:0;
+    padding:0;
+    font-family:'Sanchez', serif;
+    border-radius:0;
+}
+
+.navbar-brand {
+    margin:0 60px 0 0;
+    padding:10px 0 0 0;
+}
+
+.dropdown-menu {
+    font-family:'Droid Sans', sans-serif;
+}
+
+.ev-breadcrumb {
+    font-family:'Sanchez', serif;
+    font-size:12px;
+    background-color:#555;
+    padding:5px 2px;
+    color:#eee;
+    box-shadow:0px 1px 1px #223;
+}
+
+.ev-breadcrumb a {
+    color:#eee;
+}
+
+.ev-surround {
+    outline:1px solid #333;
+    margin:40px 0 0 0;
+}
+
+
+
+.navbar-profile-image {
+    height:40px;
+    width:40px;
+}
+
+.ev-box-shadow {
+
+}
+
+.white-background {
+    background-color:red;
+}
+
+.ev-header {
+    border:1px solid #ccc;
+    padding:10px;
+    margin:20px 0 0 0;
+
+    background-color:#fdfcfc;
+}
+
+
+.ev-header-xs {
+    border:1px solid #777;
+    padding:10px;
+    margin:40px 0 0 0;
+    background-color:#fdfcfc;
+}
+
+.ev-header-image-1 {
+    float:left;
+    margin:0px 25px 0 0;
+}
+
+.ev-header-image-1 img {
+    height:120px;
+    width:120px;
+    margin:0;
+}
+
+.ev-header-image-1-xs {
+}
+
+.ev-header-image-1-xs img {
+    height:120px;
+    width:120px;
+    margin:0 0 10px 0;
+}
+
+.ev-header-image-2 {
+    float:left;
+    margin:0px 25px 0 0;
+}
+
+.ev-header-image-2 img {
+    height:125px;
+    margin:0;
+}
+
+.ev-header-image-2-xs {
+}
+
+.ev-header-image-2-xs img {
+    height:125px;
+    width:125px;
+    margin:0 0 10px 0;
+}
+
+.ev-header-text {
+    padding:20px 0;
+    overflow:hidden;
+
+}
+.ev-header-text h3 {
+    font-family:'Sanchez', serif;
+    font-size:24px;
+    margin:0 0 10px 0;
+    padding:0;
+}
+
+.ev-header-text h5 {
+    font-family:'Sanchez', sans-serif;
+    margin:10px 0 0 0;
+    font-size:15px;
+    font-style:italic;
+    display:inline-block;
+}
+
+.ev-header-text p {
+    font-family:'Sanchez', serif;
+    font-size:15px;
+    padding:5px 0 0 0;
+}
+
+.ev-header-text-xs h3 {
+    font-family:'Sanchez', serif;
+    font-size:24px;
+    margin:0 0 5px 0;
+    padding:0;
+}
+
+.ev-header-text-xs h5 {
+    font-family:'Sanchez', sans-serif;
+    margin:0;
+    font-size:15px;
+    font-style:italic;
+}
+
+
+.ev-header-text-xs p {
+    font-family:'Sanchez', serif;
+    font-size:16px;
+    padding:5px 0 0 0;
+}
+
+.ev-header-social-media-icons {
+    float:right;
+}
+
+.ev-header-social-media-icons-xs {
+
+}
+
+.ev-header-homepage {
+    margin:-5px 5px 5px 5px;
+    display:inline;
+    vertical-align:top;
+    font-size:26px;
+    color:#333;
+    float:right;
+}
+
+.ev-header-homepage a:hover {
+    color:#777;
+}
+
+.ev-header-homepage a {
+    color:#333;
+}
+
+.ev-header-twitter {
+    margin:-5px 5px 5px 5px;
+    display:inline;
+    vertical-align:top;
+    font-size:26px;
+    color:#00aace;
+    float:right;
+}
+
+.ev-header-twitter a {
+    color:#00aace;
+}
+
+.ev-header-twitter a:hover {
+    color:#00CAF4
+}
+
+.ev-header-facebook {
+    margin:-5px 5px 5px 5px;
+    display:inline;
+    vertical-align:top;
+    font-size:26px;
+    color:#3b5998;
+    float:right;
+}
+
+.ev-header-facebook a {
+    color:#3b5998;
+}
+
+.ev-header-facebook a:hover {
+    color:#476BB8
+}
+
+.ev-header-linkedin {
+    margin:-5px 5px 5px 5px;
+    display:inline;
+    vertical-align:top;
+    font-size:26px;
+    color:#0e76a8;
+    float:right;
+}
+
+.ev-header-linkedin a {
+    color:#0e76a8;
+}
+
+
+.ev-header-linkedin a:hover {
+    color:#1298D8;
+}
+
+.ev-header-public-email {
+    margin:-5px 0 5px 5px;
+    display:inline;
+    vertical-align:top;
+    font-size:26px;
+    color:#333;
+    float:right;
+}
+
+.ev-header-public-email a {
+    color:#333;
+}
+
+.ev-header-public-email a:hover {
+    color:#777;
+}
+
+.ev-header-homepage-xs {
+    margin:-5px 0 0 0;
+    font-size:32px;
+    color:#333;
+    float:right;
+    clear:right;
+}
+
+.ev-header-homepage-xs a {
+    color:#333;
+}
+
+.ev-header-twitter-xs {
+    margin:-5px 20px 0 0;
+    font-size:32px;
+    color:#00aace;
+    float:right;
+}
+
+.ev-header-twitter-xs a {
+    color:#00aace;
+}
+
+.ev-header-facebook-xs {
+    margin:-5px 0 0 0;
+    font-size:32px;
+    color:#3b5998;
+    float:right;
+    clear:right;
+}
+
+.ev-header-facebook-xs a {
+    color:#3b5998;
+}
+
+.ev-header-linkedin-xs {
+    margin:-5px 15px 0 0;
+    font-size:32px;
+    color:#0e76a8;
+    float:right;
+}
+
+.ev-header-linkedin-xs a {
+    color:#0e76a8;
+}
+
+.ev-header-public-email-xs {
+    margin:-5px 0 0 0;
+    font-size:32px;
+    color:#333;
+    float:right;
+    clear:right;
+}
+
+.ev-header-public-email-xs a {
+    color:#333;
+}
+
+.ev-header-action-bar {
+    clear:left;
+    background-color:#ddd;
+    font-family:'Droid Sans', serif;
+    font-size:16px;
+    margin:0;
+    border-right:1px solid #777;
+    border-bottom:1px solid #777;
+    border-left:1px solid #777;
+    cursor:pointer;
+}
+
+.ev-header-action-bar-xs {
+    clear:left;
+    background-color:#ddd;
+    font-family:'Droid Sans', serif;
+    font-size:16px;
+    margin:0;
+    border-right:1px solid #777;
+    border-bottom:1px solid #777;
+    border-left:1px solid #777;
+}
+
+.ev-header-action-bar-divider {
+    float:right;
+    height:32px;
+    margin:0px;
+    border-right:1px solid #777;
+}
+
+.ev-header-action-bar-share {
+    float:right;
+    width:80px;
+    text-align:center;
+    padding:5px 0;
+    background-color:#3683c9;
+    color:#fdfcfc;
+}
+
+.ev-header-action-bar-share-xs {
+    float:right;
+    width:25%;
+    text-align:center;
+    padding:5px 0;
+    background-color:#3683c9;
+    color:#fdfcfc;
+}
+
+.ev-header-action-bar-share:hover {
+    background-color:#69a3d6;
+}
+
+.ev-header-action-bar-share-xs:hover {
+    background-color:#69a3d6;
+}
+
+.ev-header-action-bar-run-for-office {
+    float:right;
+    width:140px;
+    text-align:center;
+    padding:5px 0;
+    background-color:#4eb14e;
+    color:#fdfcfc;
+}
+
+.ev-header-action-bar-run-for-office-xs {
+    float:right;
+    width:25%;
+    text-align:center;
+    padding:5px 0;
+    background-color:#4eb14e;
+    color:#fdfcfc;
+}
+
+.ev-header-action-bar-run-for-office:hover {
+    background-color:#7ac57a;
+}
+
+.ev-header-action-bar-run-for-office-xs:hover {
+    background-color:#7ac57a;
+}
+
+.ev-header-action-bar-ask-a-question {
+    float:right;
+    width:140px;
+    text-align:center;
+    padding:5px 0;
+    background-color:#4eb14e;
+    color:#fdfcfc;
+}
+
+.ev-header-action-bar-ask-a-question-xs {
+    float:right;
+    width:25%;
+    text-align:center;
+    padding:5px 0;
+    background-color:#4eb14e;
+    color:#fdfcfc;
+}
+
+.ev-header-action-bar-ask-a-question:hover {
+    background-color:#7ac57a;
+}
+
+.ev-header-action-bar-ask-a-question-xs:hover {
+    background-color:#7ac57a;
+}
+
+.ev-header-action-bar-vote-online {
+    float:right;
+    width:120px;
+    text-align:center;
+    padding:5px 0;
+    background-color:#ee9d31;
+    color:#fdfcfc;
+}
+
+.ev-header-action-bar-vote-online-xs {
+    float:right;
+    width:24.2%;
+    text-align:center;
+    padding:5px 0;
+    background-color:#ee9d31;
+    color:#fdfcfc;
+}
+
+.ev-header-action-bar-vote-online:hover {
+    background-color:#f2b562;
+}
+
+.ev-header-action-bar-vote-online-xs:hover {
+    background-color:#f2b562;
+}
+
+.button-share {
+    margin:0;
+    text-align:center;
+    float:right;
+    clear:right;
+}
+
+.button-ask {
+    margin:0;
+    text-align:center;
+    float:right;
+}
+
+.button-ask-xs {
+    text-align:left;
+    float:right;
+    margin:10px 0 0 0;
+    clear:left;
+}
+
+.button-run {
+    text-align:left;
+    float:right;
+}
+
+.button-run-xs {
+    text-align:left;
+    float:left;
+    margin:10px 0 0 0;
+}
+
+.button-vote-online {
+    margin:10px 0 0 0;
+}
+
+.button-share-xs {
+    float:right;
+    margin:0;
+}
+
+.button-vote-online-xs {
+    float:left;
+    clear:left;
+    margin:0 10px 0 0;
+    text-align:left;
+}
+
+.group-square-image {
+    margin:10px 20px 10px 0px;
+}
+
+.main-box {
+    margin:0;
+    border-left:1px solid #777;
+    border-right:1px solid #777;
+}
+
+.main-box-tabs {
+    background-color:#777;
+    font-family:'Droid Sans', serif;
+    font-size:18px;
+}
+
+.main-box-tabs a {
+    text-decoration:none;
+}
+
+.triangle-down {
+    width:0;
+    height:0;
+    border-left:7px solid transparent;
+    border-right:7px solid transparent;
+    border-top:10px solid #777;
+    clear:both;
+    text-align:center;
+    margin:0 auto;
+}
+
+.main-box-tabs-icon {
+    font-size:19px;
+}
+
+.main-box-tabs-groups {
+    display:inline-block;
+    color:#eee;
+    padding:5px 10px 10px 10px;
+    margin:5px 0 0 0;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+}
+
+.main-box-tabs-groups:hover {
+    background-color:#555;
+}
+
+.main-box-tabs-election {
+    display:inline-block;
+    padding:5px 10px 10px 10px;
+    margin:5px 0 0 0;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    color:#eee;
+}
+
+.main-box-tabs-election:hover {
+    background-color:#555;
+}
+
+.main-box-tabs-about {
+    display:inline-block;
+    padding:5px 10px 10px 10px;
+    margin:5px 0 0 0;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    color:#eee;
+}
+
+.main-box-tabs-about:hover {
+    background-color:#555;
+}
+
+.main-box-tabs-calendar {
+    display:inline-block;
+    padding:5px 10px 10px 10px;
+    margin:5px 0 0 0;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    color:#eee;
+}
+
+.main-box-tabs-calendar:hover {
+    background-color:#555;
+}
+
+
+.main-box-tabs-questions {
+    display:inline-block;
+    padding:5px 10px 10px 10px;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    color:#eee;
+}
+
+.main-box-tabs-questions:hover {
+    background-color:#555;
+}
+
+.main-box-tabs-active {
+    display:inline-block;
+    padding:5px 10px 10px 10px;
+    background-color:#fdfcfc;
+    color:#333;
+}
+
+.main-box-tabs-active:hover {
+    background-color:#fdfcfc;
+    color:#333;
+}
+
+.main-box-body {
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    padding:10px 0 20px 0;
+    background-color:#fdfcfc;
+}
+
+.election-header {
+    background-color:#fefdea;
+    text-align:left;
+    padding:5px 20px;
+    border-top:1px dashed #ccc;
+    border-bottom:1px dashed #ccc;
+}
+
+.election-header-name {
+    font-family:'Droid Sans', sans-serif;
+    font-size:26px;
+}
+
+.election-candidates-heading {
+    background-color:#fefdea;
+    font-family:'Droid Sans', sans-serif;
+    font-size:26px;
+    padding:5px 20px;
+    margin:10px 0 20px 0;
+    border-top:1px dashed #ccc;
+    border-bottom:1px dashed #ccc;
+}
+
+.election-candidates-sorting {
+    float:right;
+    padding:5px 0 0 0;
+    font-size:20px;
+}
+
+.election-candidates-sorting-dropdown {
+    text-align:left;
+    font-family:'Droid Sans', sans-serif;
+    font-size:20px;
+}
+
+.election-header-name-dropdown {
+    text-align:left;
+    font-family:'Droid Sans', sans-serif;
+    font-size:20px;
+}
+
+.election-voting-days {
+    padding:20px 20px 0 20px;
+    font-family:'Droid Sans', sans-serif;
+    font-size:16px;
+}
+
+.election-about {
+    padding:20px;
+    font-family:'Droid Sans', sans-serif;
+    font-size:16px;
+}
+
+.election-candidates-level-1-a {
+    background-color:#e7e7e7;
+    margin:0;
+}
+
+.election-candidates-level-1-a p {
+    padding:7px 10px;
+    margin:0;
+    font-family:'Droid Sans', sans-serif;
+    font-size:24px;
+}
+
+.election-candidates-level-1-b {
+    background-color:#e7e7e7;
+    margin:0;
+}
+
+.election-candidates-level-1-b p {
+    padding:7px 10px;
+    font-family:'Droid Sans', sans-serif;
+    font-size:24px;
+    margin:0;
+}
+
+.election-candidates-level-2-a {
+    background-color:#f7f7f7;
+    margin:0;
+}
+
+.election-candidates-level-2-a p {
+    padding:5px 20px 5px 40px;
+    margin:0;
+    font-family:'Droid Sans', sans-serif;
+    font-size:22px;
+}
+
+.election-candidates-level-2-b {
+    background-color:#f7f7f7;
+    margin:0;
+}
+
+.election-candidates-level-2-b p {
+    padding:5px 20px 5px 40px;
+    margin:0;
+    font-family:'Droid Sans', sans-serif;
+    font-size:22px;
+}
+
+.election-candidates-level-1-total {
+    font-size:22px;
+    float:right;
+    margin:0;
+}
+
+.election-candidates-level-2-total {
+    font-size:20px;
+    float:right;
+    margin:0;
+}
+
+.election-candidates-mini-profile img, .election-candidates-mini-profile img {
+    width:100px;
+    height:100px;
+    margin:0 20px 0 10px;
+    float:left;
+    border-radius:5px;
+}
+
+.election-candidates-body hr {
+    margin:0;
+    padding:0;
+}
+
+.election-candidates-mini-profile {
+    padding:20px 20px 20px 45px;
+}
+
+.election-candidates-mini-profile a {
+    color:#333;
+}
+
+.election-candidates-mini-profile-text {
+    overflow:hidden;
+}
+
+.election-candidates-mini-profile-text-name {
+    font-family:'Droid Sans', sans-serif;
+    font-size:22px;
+    margin:-5px 0 5px 0;
+    padding:0;
+}
+
+.election-candidates-mini-profile-text-goals {
+    font-family:'Droid Sans', sans-serif;
+    font-size:16px;
+    margin:0 0 5px 0;
+}
+
+.election-candidates-mini-profile-text-answers-comments {
+    font-family:'Droid Sans', sans-serif;
+    font-size:16px;
+    margin:0;
+}
+
+.election-candidates-body {
+
+}
+
+.election-candidates-name {
+    font-size:18px;
+    vertical-align:top;
+    font-weight:bold;
+
+}
+
+.election-candidates-goals {
+    font-family:'Droid Sans', sans-serif;
+    font-size:15px;
+}
+
+.election-candidates-answers {
+    font-size:14px;
+    float:left;
+    line-height:35px;
+}
+
+.election-candidates-comments {
+    font-size:14px;
+    float:right;
+    line-height:35px
+}
+
+.clear-right {
+    clear:right;
+}
+
+.about-image {
+    margin:0 20px 20px 20px;
+    padding:10px 0 0 0;
+}
+
+
+
+.about-text {
+    margin:0 20px 20px 20px;
+}
+
+.about-text h3 {
+    font-family:'Droid Sans', sans-serif;
+}
+
+.calendar-header {
+    background-color:#fefdea;
+    font-family:'Droid Sans', sans-serif;
+    font-size:26px;
+    padding:5px 20px;
+    margin:0 0 20px 0;
+    border-top:1px dashed #ccc;
+    border-bottom:1px dashed #ccc;
+}
+
+.calendar-header-name {
+
+}
+
+.calendar-header-name-dropdown {
+    text-align:left;
+    font-family:'Droid Sans', sans-serif;
+    font-size:26px;
+}
+
+.calendar-text h4 {
+    padding:0;
+    margin:0 0 5px 0;
+}
+
+.calendar-text {
+    margin:0 20px 20px 20px;
+}
+
+.calendar-upcoming-events {
+    height:60px;
+    line-height:60px;
+    font-family:'Droid Sans', sans-serif;
+    font-size:26px;
+}
+
+.calendar-past-events {
+    height:60px;
+    line-height:60px;
+    font-family:'Droid Sans', sans-serif;
+    font-size:26px;
+}
+
+.questions-body {
+
+}
+
+.questions-body hr {
+    margin:0;
+    padding:0;
+}
+
+.questions-heading {
+    background-color:#fefdea;
+    font-family:'Droid Sans', sans-serif;
+    font-size:26px;
+    padding:5px 20px;
+    margin:0 0 10px 0;
+    border-bottom:1px dashed #ccc;
+    border-top:1px dashed #ccc;
+}
+
+.questions-sorting {
+    float:right;
+    font-size:20px;
+    padding:5px 0 0 0;
+}
+
+.questions-sorting-button {
+
+}
+
+.questions-sorting-dropdown {
+    text-align:left;
+    font-family:'Droid Sans', sans-serif;
+    font-size:18px;
+}
+
+.questions-level-1 {
+    font-family:'Droid Sans', sans-serif;
+    font-size:18px;
+    padding:20px;
+    margin:0;
+}
+
+.questions-level-1-text {
+    overflow:hidden;
+}
+
+.questions-level-1-toggle-closed {
+    float:left;
+    margin:0 5px 0 0;
+    cursor:pointer;
+}
+
+.questions-level-1-toggle-open {
+    float:left;
+    display:none;
+    margin:0 5px 0 0;
+    cursor:pointer;
+}
+
+.questions-level-1-answer {
+    float:right;
+    overflow:hidden;
+    margin:0 0 0 20px;
+    display:inline-block;
+    width:80px;
+}
+
+.questions-level-1-answer-button {
+    padding:2px 0;
+    background-color:#3683c9;
+    text-align:center;
+    border-radius:5px;
+    color:#fdfcfa;
+    font-family:'Droid Sans', sans-serif;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.questions-level-1-answer-button:hover {
+    background-color:#69a3d6;
+}
+
+.questions-level-1-answer-total {
+    font-size:14px;
+    text-align:center;
+    font-family:'Droid Sans', sans-serif;
+
+}
+
+.questions-level-1-question {
+
+}
+
+.questions-level-1-question-below {
+    font-weight:normal;
+}
+
+.questions-level-1-question-below-asker {
+    font-size:12px;
+    font-style:italic;
+    float:right;
+}
+
+.questions-level-1-question-below-timestamp {
+    font-size:12px;
+    font-style:italic;
+}
+
+.questions-level-2-display-none {
+    display:none;
+}
+
+.questions-level-2-toggle-closed {
+    float:left;
+    margin:0 5px 0 0;
+    cursor:pointer;
+}
+
+.questions-level-2-toggle-open {
+    float:left;
+    display:none;
+    margin:0 5px 0 0;
+    cursor:pointer;
+}
+
+.questions-level-2-hr {
+    margin:0 20px 10px 40px;
+}
+
+.questions-level-2 {
+    font-family:'Droid Sans', sans-serif;
+    font-size:16px;
+    padding:10px 20px 10px 40px;
+    margin:0;
+}
+
+.questions-level-2-answer {
+    float:right;
+    width:80px;
+    font-weight:bold;
+    margin:0 0 0 20px;
+}
+
+.questions-level-2-answer-icon {
+    text-align:center;
+}
+
+.questions-level-2-toggle {
+    float:left;
+    font-size:18px;
+    margin:10px 5px 0 0;
+    display:inline-block;
+    cursor:pointer;
+
+}
+
+.questions-level-2-profile-picture {
+    display:inline-block;
+    float:left;
+    margin:0 10px 0 0;
+}
+
+.questions-level-2-profile-picture img {
+    width:50px;
+    height:50px;
+    border-radius:5px;
+}
+
+.questions-level-2-text {
+    overflow:hidden;
+    font-size:15px;
+}
+
+.questions-level-2-text-name {
+    font-weight:bold;
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+}
+
+.questions-level-2-text-answer {
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+}
+
+.questions-level-2-text-below {
+
+}
+
+.questions-level-2-text-below-comments {
+    float:right;
+    font-family:'Droid Sans', sans-serif;
+    font-size:14px;
+    font-style:italic;
+}
+
+.questions-level-2-text-below-timestamp {
+    font-family:'Droid Sans', sans-serif;
+    font-size:14px;
+    font-style:italic;
+}
+
+.questions-level-3-display-none {
+    display:none;
+}
+
+.questions-level-3-hr {
+    margin:0 20px 10px 90px;
+}
+
+.questions-level-3 {
+    font-family:'Droid Sans', sans-serif;
+    font-size:16px;
+    padding:10px 20px 10px 90px;
+    margin:0;
+}
+
+.questions-level-2-comment {
+    padding:2px 0;
+    background-color:#4eb14e;
+    text-align:center;
+    border-radius:5px;
+    color:#fdfcfa;
+    font-family:'Droid Sans', sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    cursor:pointer;
+}
+
+.questions-level-2-comment:hover {
+    background-color:#7ac57a;
+}
+
+.questions-level-3-answer {
+    float:right;
+    width:80px;
+    font-weight:bold;
+    margin:0 0 0 20px;
+    font-size:14px;
+}
+
+.questions-level-3-answer-icon {
+    text-align:center;
+}
+
+.questions-level-3-toggle {
+    float:left;
+    font-size:16px;
+    margin:10px 5px 0 0;
+    display:inline-block;
+    cursor:pointer;
+
+}
+
+.questions-level-3-profile-picture {
+    display:inline-block;
+    float:left;
+    margin:0 10px 0 0;
+}
+
+.questions-level-3-profile-picture img {
+    width:36px;
+    height:36px;
+    border-radius:5px;
+}
+
+.questions-level-3-text {
+    overflow:hidden;
+    font-size:14px;
+}
+
+.questions-level-3-text-name {
+    font-weight:bold;
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+}
+
+.questions-level-3-text-answer {
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+}
+
+.questions-level-3-text-below {
+
+}
+
+.questions-level-3-text-below-comments {
+    float:right;
+    font-family:'Droid Sans', sans-serif;
+    font-size:13px;
+    font-style:italic;
+}
+
+.questions-level-3-text-below-timestamp {
+    font-family:'Droid Sans', sans-serif;
+    font-size:13px;
+    font-style:italic;
+}
+
+.yes {
+    color:#5cb85c;
+}
+
+.no {
+    color:#d9534f;
+}
+
+.undecided {
+    color:#888;
+}
+
+.groups-header {
+    background-color:#fefdea;
+    text-align:left;
+    padding:5px 10px;
+    border-top:1px dashed #ccc;
+    border-bottom:1px dashed #ccc;
+}
+
+.groups-header-name {
+    font-family:'Droid Sans', sans-serif;
+    font-size:26px;
+    margin:0 0 0 10px;
+    float:left;
+}
+
+.groups-header-search {
+    font-family:'Droid Sans', sans-serif;
+    font-size:16px;
+    display:inline-block;
+    float:left;
+    margin:0 0 0 5px;
+}
+
+.groups-header-search input {
+    margin:0;
+    height:40px;
+    width:250px;
+    display:inline-block;
+    float:left;
+    line-height:40px;
+}
+
+.groups-header-search-go {
+
+    font-family:'Droid Sans', sans-serif;
+    font-size:26px;
+    display:inline-block;
+    width:40px;
+    text-align:center;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    float:left;
+    background-color:#eee;
+}
+
+.groups-select {
+    padding:0 20px 0 20px;
+    text-align:center;
+}
+
+.groups-select a {
+    font-family:'Droid Sans', sans-serif;
+    font-size:16px;
+}
+
+.groups-select h3 {
+    font-size:24px;
+    margin:10px 0 5px 0;
+}
+
+.groups-select-letters {
+    margin:20px 0 0 0;
+}
+
+.groups-select-upcoming-elections {
+    font-family:'Droid Sans', sans-serif;
+    font-size:22px;
+    margin:10px 20px;
+}
+
+.groups-mini-profiles {
+    text-align:left;
+    padding:0 20px;
+}
+
+.groups-mini-profile {
+    border-top:1px solid #ccc;
+    padding:20px 10px;
+}
+
+.groups-mini-profile-image {
+    float:left;
+    margin:0 30px 0 0;
+}
+
+.groups-mini-profile-image img {
+    height:100px;
+    width:100px;
+    margin:0;
+}
+
+.groups-mini-profile-text {
+
+    padding:2px 0;
+    margin:0;
+}
+
+.groups-mini-profile-text-name {
+
+}
+
+.groups-mini-profile-text-name h3 {
+    font-size:20px;
+    font-family:'Droid Sans', sans-serif;
+    font-weight:bold;
+    padding:0;
+    margin:0;
+}
+
+.groups-mini-profile-text-next-election {
+    margin:10px 0;
+}
+
+.groups-mini-profile-text-next-election p {
+    font-size:18px;
+    font-family:'Droid Sans', sans-serif;
+    padding:0;
+    margin:0;
+}
+
+.groups-mini-profile-text-cqa {
+
+}
+
+.groups-mini-profile-text-cqa p {
+    font-size:16px;
+    font-family:'Droid Sans', sans-serif;
+    padding:0 20px 0 0;
+    margin:0;
+    display:inline;
+}
+
+.groups-mini-profile-image-xs {
+    float:left;
+    margin:0 20px 0 0;
+}
+
+.groups-mini-profile-image-xs img {
+    height:60px;
+    width:60px;
+    margin:0;
+}
+
+.groups-mini-profile-text-xs {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+.groups-mini-profile-text-name-xs{
+
+}
+
+.groups-mini-profile-text-name-xs h3 {
+    font-size:20px;
+    font-family:'Droid Sans', sans-serif;
+    font-weight:bold;
+    padding:0;
+    margin:0;
+}
+
+.groups-mini-profile-text-next-election-xs {
+    margin:10px 0;
+}
+
+.groups-mini-profile-text-next-election-xs p {
+    font-size:18px;
+    font-family:'Droid Sans', sans-serif;
+    padding:0;
+    margin:0;
+}
+
+.groups-mini-profile-text-cqa-xs {
+
+}
+
+.groups-mini-profile-text-cqa-xs p {
+    font-size:16px;
+    font-family:'Droid Sans', sans-serif;
+    padding:0 10px 0 0;
+    margin:0;
+    display:inline;
+}
+
+.groups-mini-profiles-footer {
+    font-family:'Droid Sans', sans-serif;
+    font-size:16px;
+    padding:20px;
+}
+
+.groups-mini-profiles-footer-prev {
+    float:left;
+}
+
+.groups-mini-profiles-footer-next {
+    float:right;
+}
+
+.candidate-header {
+    background-color:#fefdea;
+    font-family:'Droid Sans', sans-serif;
+    font-size:22px;
+    padding:5px 20px;
+    margin:0 0 20px 0;
+    border-top:1px dashed #ccc;
+    border-bottom:1px dashed #ccc;
+    text-align:center;
+}
+
+.candidate-header-name {
+    font-family:'Droid Sans', sans-serif;
+    font-size:22px;
+}
+
+.candidate-header-name-dropdown {
+    text-align:left;
+    font-family:'Droid Sans', sans-serif;
+    font-size:22px;
+}
+
+.candidate-header-prev {
+    font-family:'Droid Sans', sans-serif;
+    font-size:16px;
+    padding:5px 0 0 0;
+    float:left;
+}
+
+.candidate-header-prev a {
+
+}
+
+.candidate-header-candidate {
+    background-color:#fefdea;
+    font-family:'Droid Sans', sans-serif;
+    font-size:22px;
+    padding:0px;
+}
+
+.candidate-header-next {
+    font-family:'Droid Sans', sans-serif;
+    padding:5px 0 0 0;
+    font-size:16px;
+    float:right;
+}
+
+.candidate-header-next a {
+
+}
+
+.candidate-side {
+}
+
+.candidate-side-xs {
+    clear:right;
+}
+
+.candidate-social-media-icons {
+    float:right;
+    display:inline;
+}
+
+.candidate-social-media-icons-xs {
+    float:right;
+    clear:right;
+    margin:0 0 -10px 0;
+}
+
+.candidate-social-media-icons-homepage {
+    margin:-5px 5px 5px 5px;
+    display:inline;
+    vertical-align:top;
+    font-size:26px;
+    color:#333;
+    float:right;
+}
+
+.candidate-social-media-icons-homepage a {
+    color:#333;
+}
+
+.candidate-social-media-icons-homepage a:hover {
+    color:#777;
+}
+
+.candidate-social-media-icons-twitter {
+    margin:-5px 5px 5px 5px;
+    display:inline;
+    vertical-align:top;
+    font-size:26px;
+    color:#00aace;
+    float:right;
+}
+
+.candidate-social-media-icons-twitter a {
+    color:#00aace;
+}
+
+.candidate-social-media-icons-twitter a:hover {
+    color:#00CAF4;
+}
+
+.candidate-social-media-icons-facebook {
+    margin:-5px 5px 5px 5px;
+    display:inline;
+    vertical-align:top;
+    font-size:26px;
+    color:#3b5998;
+    float:right;
+}
+
+.candidate-social-media-icons-facebook a {
+    color:#3b5998;
+}
+
+.candidate-social-media-icons-facebook a:hover {
+    color:#476BB8;
+}
+
+.candidate-social-media-icons-linkedin {
+    margin:-5px 5px 5px 5px;
+    display:inline;
+    vertical-align:top;
+    font-size:26px;
+    color:#0e76a8;
+    float:right;
+}
+
+.candidate-social-media-icons-linkedin a {
+    color:#0e76a8;
+}
+
+.candidate-social-media-icons-linkedin a:hover {
+    color:#1298D8;
+}
+
+.candidate-social-media-icons-public-email {
+    margin:-5px 20px 5px 5px;
+    display:inline;
+    vertical-align:top;
+    font-size:26px;
+    color:#333;
+    float:right;
+}
+
+.candidate-social-media-icons-public-email a {
+    color:#333;
+}
+
+.candidate-social-media-icons-public-email a:hover {
+    color:#777;
+}
+
+.candidate-edit-profile-button {
+    float:right;
+    font-family:'Droid Sans', sans-serif;
+    margin:0 20px 0 0;
+    border-radius:5px;
+}
+
+.candidate-edit-profile-button-inside {
+    background-color:#ee9d31;
+    color:#fdfcfc;
+}
+.candidate-edit-profile-button:hover {
+    background-color:#f2b562;
+}
+
+.candidate-profile-picture {
+    margin:0 20px;
+    float:left;
+    display:inline;
+}
+
+.candidate-profile-picture img {
+    width:140px;
+    height:140px;
+    border-radius:5px;
+    float:left;
+}
+
+.candidate-profile-picture-xs {
+    margin:0 20px 10px 20px;
+    float:right;
+    overflow:hidden;
+}
+
+.candidate-profile-picture-xs img {
+    width:120px;
+    height:120px;
+    border-radius:5px;
+}
+
+.candidate-quick-bio-xs {
+    margin:-5px 0 0 20px;
+}
+
+.candidate-quick-bio {
+    overflow:hidden;
+    float:left;
+}
+
+.candidate-quick-bio-name {
+    font-family:'Droid Sans', sans-serif;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.candidate-quick-bio-running-for {
+    clear:left;
+    font-family:'Droid Sans', sans-serif;
+    font-size:20px;
+}
+
+.candidate-quick-bio-major {
+    clear:left;
+    font-family:'Droid Sans', sans-serif;
+    font-size:18px;
+    margin:5px 0 0 0;
+}
+
+.candidate-quick-bio-year {
+    clear:left;
+    font-family:'Droid Sans', sans-serif;
+    font-size:18px;
+}
+
+.candidate-quick-bio-party {
+    clear:left;
+    font-family:'Droid Sans', sans-serif;
+    font-size:18px;
+}
+
+.candidate-bio {
+    margin:20px 20px 0 20px;
+}
+
+.candidate-bio h3 {
+    font-family:'Droid Sans', sans-serif;
+    font-size:22px;
+    margin:10px 0;
+}
+
+.candidate-bio p {
+    font-family:'Droid Sans', sans-serif;
+    font-size:16px;
+    margin:0 20px;
+}
+
+.candidate-bio-goals {
+    margin:15px 0;
+    border-top:1px dotted #ccc;
+}
+
+.candidate-bio-experience {
+    margin:15px 0;
+    border-top:1px dotted #ccc;
+}
+
+.candidate-bio-about {
+    margin:15px 0;
+    border-top:1px dotted #ccc;
+}
+
+.candidate-bio-answers {
+    margin:15px 0;
+    border-top:1px dotted #ccc;
+}
+
+.candidate-bio-answers-text {
+    float:left;
+}
+
+.candidate-bio-answers-text-question {
+    margin:0 0 5px 0;
+}
+
+.candidate-bio-answers-text-answer {
+    padding:0 0 20px 0;
+}
+
+.candidate-bio-answers-answer-icon {
+    margin:-3px 20px 0 20px;
+    float:right;
+    font-family:'Droid Sans', sans-serif;
+    font-size:20px;
+    overflow:hidden;
+
+}
+
+.candidate-footer {
+    height:50px;
+    line-height:50px;
+    background-color:#fefdea;
+    font-family:'Droid Sans', sans-serif;
+    font-size:22px;
+    padding:0 20px;
+    border-top:1px dashed #ccc;
+    border-bottom:1px dashed #ccc;
+    text-align:center;
+}
+
+.candidate-footer-prev {
+    height:50px;
+    line-height:50px;
+    font-family:'Droid Sans', sans-serif;
+    font-size:16px;
+    float:left;
+}
+
+.candidate-footer-next {
+    height:50px;
+    line-height:50px;
+    font-family:'Droid Sans', sans-serif;
+    font-size:16px;
+    float:right;
+}
+
+.absolute-center-groups-search {
+    margin:auto;
+    position:absolute;
+    top:0px; right:0; bottom:0; left:0;
+}
+
+.nav-tabs li {
+    font-family:'Sanchez', serif;
+    font-size:20px;
+}
+
+.side-boxes {
+    padding:0 20px;
+}
+
+.side-box-icon {
+    display:inline;
+    font-size:18px;
+    margin:9px 10px 0 0;
+    float:right;
+}
+
+.side-box-icon-run-for-office {
+    display:inline;
+    float:right;
+    font-size:18px;
+    margin:12px 10px 0 0;
+}
+
+.side-box-header-recent-activity {
+    margin:20px 0 0 0;
+    padding:3px 0;
+    border:1px solid #777;
+    background-color:#fdfcfc;
+    box-shadow:1px 1px 1px #333;
+    z-index:-1;
+    cursor:pointer;
+}
+
+.side-box-header-recent-activity h3 {
+    font-family:'Sanchez', serif;
+    margin:5px 10px 10px 10px;
+    display:inline-block;
+    font-size:18px;
+}
+
+.side-box-header-mod-controls{
+    margin:0;
+    padding:3px 0;
+    border-right:1px solid #777;
+    border-bottom:1px solid #777;
+    border-left:1px solid #777;
+    background-color:#fdfcfc;
+    box-shadow:1px 1px 1px #333;
+    z-index:-1;
+    cursor:pointer;
+}
+
+.side-box-header-mod-controls h3{
+    font-family:'Sanchez', serif;
+    margin:5px 10px 10px 10px;
+    display:inline-block;
+    font-size:18px;
+}
+
+.side-box-mod-controls-feed button {
+    font-family:'Droid Sans', serif;
+    font-size:16px;
+}
+
+.side-box-header {
+    margin:0;
+    padding:3px 0;
+    border-right:1px solid #777;
+    border-bottom:1px solid #777;
+    border-left:1px solid #777;
+    background-color:#fdfcfc;
+    box-shadow:1px 1px 1px #333;
+    z-index:-1;
+    cursor:pointer;
+}
+
+.side-box-header h3 {
+    font-family:'Sanchez', serif;
+    margin:5px 10px 10px 10px;
+    display:inline-block;
+    font-size:18px;
+}
+
+.side-box-header a {
+    text-decoration:none;
+    color:#333;
+}
+
+#side-box-header-mod-controls {
+}
+
+#side-box-header-recent-activity {
+}
+
+#side-box-header-announcements {
+}
+
+#side-box-header-candidates {
+}
+
+#side-box-header-officers {
+}
+
+#side-box-feed-mod-controls {
+    display:none;
+}
+
+#side-box-feed-recent-activity {
+    display:none;
+}
+
+#side-box-feed-announcements {
+    display:none;
+}
+
+#side-box-feed-candidates {
+    display:none;
+}
+
+#side-box-feed-officers {
+    display:none;
+}
+
+#side-box-footer-mod-controls {
+    display:none;
+}
+
+#side-box-footer-recent-activity {
+    display:none;
+}
+
+#side-box-footer-announcements {
+    display:none;
+}
+
+#side-box-footer-candidates {
+    display:none;
+}
+
+#side-box-footer-officers {
+    display:none;
+}
+
+.side-box-feed {
+    border-left:1px solid #777;
+    border-bottom:1px solid #777;
+    border-right:1px solid #777;
+    margin:0;
+    height:300px;
+    overflow:auto;
+    background-color:#fdfcfc;
+    z-index:-1;
+}
+
+.side-box-feed p {
+    padding:10px 10px 0 10px;
+    font-family:'Droid Sans', sans-serif;
+    font-size:14px;
+}
+
+.side-box-feed a {
+    text-decoration:none;
+    color:#333;
+}
+
+.side-box-feed-level-1-a {
+    background-color:#e7e7e7;
+    visibility:visible;
+}
+
+.side-box-feed-level-1-b {
+    background-color:#ccc;
+    visibility:visible;
+}
+
+.side-box-feed-level-1-a p {
+    padding:10px;
+    margin:0;
+    font-family:'Droid Sans', sans-serif;
+    font-size:18px;
+    visibility:visible;
+}
+
+.side-box-feed-level-1-b p {
+    padding:10px;
+    margin:0;
+    font-family:'Droid Sans', sans-serif;
+    font-size:18px;
+    visibility:visible;
+}
+
+.side-box-feed-level-2-a {
+    background-color:#f4f4f4;
+    margin:0 0 0 10px;
+}
+
+.side-box-feed-level-2-b {
+    background-color:#ddd;
+    margin:0 0 0 10px;
+}
+
+.side-box-feed-level-2-a p {
+    padding:10px;
+    font-family:'Droid Sans', sans-serif;
+    font-size:16px;
+    margin:0;
+}
+
+.side-box-feed-level-2-b p {
+    padding:10px;
+    font-family:'Droid Sans', sans-serif;
+    font-size:16px;
+    margin:0;
+}
+
+.side-box-feed-level-3-a {
+    background-color:#fdfcfc;
+    margin:0 0 0 20px;
+}
+
+.side-box-feed-level-3-b {
+    background-color:#fdfcfc;
+    margin:0 0 0 20px;
+}
+
+.side-box-feed-level-3-a p {
+    padding:10px;
+    font-family:'Droid Sans', sans-serif;
+    font-size:14px;
+    margin:0;
+}
+
+.side-box-feed-level-3-b p {
+    padding:10px;
+    font-family:'Droid Sans', sans-serif;
+    font-size:14px;
+    margin:0;
+}
+
+#side-box-feed-legislative-branch-items {
+
+}
+
+#side-box-feed-executive-branch-items {
+
+}
+
+#side-box-feed-judicial-branch-items {
+
+}
+
+#side-box-feed-senator-district-1-items {
+    display:none;
+}
+
+#side-box-feed-senator-district-2-items {
+    display:none;
+}
+
+#side-box-feed-senator-district-3-items {
+    display:none;
+}
+
+#side-box-feed-president-items {
+    display:none;
+}
+
+#side-box-feed-vice-president-items {
+    display:none;
+}
+
+#side-box-feed-treasurer-items {
+    display:none;
+}
+
+#side-box-feed-secretary-items {
+    display:none;
+}
+
+.text-centered {
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+
+.side-box-mod-controls-feed {
+    border-left:1px solid #777;
+    border-bottom:1px solid #777;
+    border-right:1px solid #777;
+    height:390px;
+    padding:10px;
+    margin:0;
+    background-color:#fdfcfc;
+    box-shadow:1px 1px 1px #333;
+}
+
+.side-box-mod-controls-feed-button {
+    display:block;
+}
+
+.side-box-mod-controls-feed p {
+    padding:10px 10px 0 10px;
+}
+
+.side-box-feed-divider {
+    border-bottom:1px dashed #ddd;
+    width:100%;
+}
+
+.side-box-footer {
+    border-left:1px solid #777;
+    border-bottom:1px solid #777;
+    border-right:1px solid #777;
+    background-color:#f9f8f7;
+    height:20px;
+    text-align:center;
+    font-size:10px;
+    color:#333;
+    margin:0;
+    box-shadow:1px 1px 1px #333;
+    cursor:pointer;
+}
+
+.ev-footer {
+    font-family:'Droid Sans', serif;
+    font-size:15px;
+    background-color:#eee;
+    margin:100px 0 0 0;
+    color:#777;
+    border-top:1px solid #ccc;
+}
+
+.ev-footer-links {
+    padding:20px 10px 20px 10px;
+}
+
+
+.ev-darker {
+    background-color:#eee;
+}
