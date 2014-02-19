@@ -26,22 +26,22 @@ class ItemDetailView(DetailView):
         
         context['all_items'] = Item.objects.order_by('datetime').filter(project=project)
             
-    projectLinks = []
-    
-    # Create project links
-    for project in Project.objects.all():
+        projectLinks = []
         
-        first_item = project.item_set.order_by('-datetime').first()
-        
-        projectLink = {
-            'name': project.name,
-            'font_awesome_class': project.font_awesome_class,
+        # Create project links
+        for project in Project.objects.all():
             
-            # Todo, this url is hardcoded
-            'first_item_url': '/items/{0}'.format(first_item.id)
-        }
-        
-        projectLinks.append(projectLink)
+            first_item = project.item_set.order_by('-datetime').first()
+            
+            projectLink = {
+                'name': project.name,
+                'font_awesome_class': project.font_awesome_class,
+                
+                # Todo, this url is hardcoded
+                'first_item_url': '/items/{0}'.format(first_item.id)
+            }
+            
+            projectLinks.append(projectLink)
 
         context['projectLinks'] = projectLinks
         
