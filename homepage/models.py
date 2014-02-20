@@ -8,7 +8,7 @@ def get_upload_file_name(instance, filename):
 class Project(models.Model):
     name = models.CharField(max_length=100)
     about = models.TextField(blank=True)
-    font_awesome_class = models.CharField(max_length=50)
+    font_awesome_class = models.CharField(max_length=50, blank=True)
     
     def __unicode__(self):
         return u'%s' % (self.name)
