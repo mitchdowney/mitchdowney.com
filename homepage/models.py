@@ -10,6 +10,9 @@ class Project(models.Model):
     about = models.TextField(blank=True)
     font_awesome_class = models.CharField(max_length=50, blank=True)
     
+    class Meta:
+        ordering = ['name']
+    
     def __unicode__(self):
         return u'%s' % (self.name)
         
