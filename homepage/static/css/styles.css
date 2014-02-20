@@ -212,7 +212,7 @@ a:hover {
 
 @media (max-width:991px) {
     .main-project-first {
-        padding:15px 0;
+        padding:10px 0 15px 0;
         font-size:32px;
         border-bottom:1px dotted #303030;
         color:#c7c7c7;
@@ -222,7 +222,7 @@ a:hover {
 
 @media (min-width:992px) {
     .main-project-first {
-        padding:15px 0;
+        padding:10px 0 15px 0;
         font-size:32px;
         color:#c7c7c7;
         font-family:'Roboto', serif;
@@ -232,7 +232,7 @@ a:hover {
 
 @media (max-width:991px) {
     .main-project {
-        padding:15px 0;
+        padding:10px 0 15px 0;
         font-size:32px;
         border-bottom:1px dotted #303030;
         color:#c7c7c7;
@@ -242,7 +242,7 @@ a:hover {
 
 @media (min-width:992px) {
     .main-project {
-        padding:15px 0;
+        padding:10px 0 15px 0;
         font-size:32px;
         color:#c7c7c7;
         font-family:'Roboto', serif;
@@ -260,7 +260,20 @@ a:hover {
     .main-project-icon {
         float:right;
         clear:right;
-        margin:10px 0;
+        margin:5px 0;
+    }
+}
+
+@media (max-width:559px) {
+    .main-project-text {
+        font-size:16px;
+    }
+}
+
+@media (min-width:560px) {
+    .main-project-text {
+        font-size:16px;
+        padding:0 20px 0 0;
     }
 }
 
