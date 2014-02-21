@@ -15,6 +15,8 @@ def home(request):
         projectLink = {
             'name': project.name,
             'about': project.about,
+            'license': project.license,
+            'license_link': project.license_link,
             'font_awesome_class': project.font_awesome_class,
             
             # Todo, this url is hardcoded
