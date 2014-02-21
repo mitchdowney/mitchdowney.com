@@ -34,7 +34,7 @@
 
       {% endwith %}
           
-      <div class="main-headline color-{{ item.project.name|lower }}">
+      <div class="main-headline color-{{ item.project.name.split|join:"-"|lower }}">
         {{ item.project.name }}
       </div>
       
