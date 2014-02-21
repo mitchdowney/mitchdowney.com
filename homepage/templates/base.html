@@ -44,13 +44,13 @@
     <div class="col-md-9">
       
       <div class="mitchdowney-navbar">
-        <a style="color:#CACA77;text-decoration:none;" href="index.php">Portfolio <i class="fa fa-folder-o"></i></a><br />
+        <a style="color:#CACA77;text-decoration:none;" href="/>Portfolio <i class="fa fa-folder-o"></i></a><br />
         
         {% for projectLink in projectLinks %}
           {% ifequal projectLink.name project_name %}
-            &nbsp <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name.split|join:"-"|lower }}"><i class="fa {{ projectLink.font_awesome_class }}"></i></a>
+            &nbsp <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name.split|join:'-'|lower }}"><i class="fa {{ projectLink.font_awesome_class }}"></i></a>
           {% else %}
-            &nbsp <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name.split|join:"-"|lower }}-hover"><i class="fa {{ projectLink.font_awesome_class }}"></i></a>
+            &nbsp <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name.split|join:'-'|lower }}-hover"><i class="fa {{ projectLink.font_awesome_class }}"></i></a>
           {% endifequal %}
         {% endfor %}
     
