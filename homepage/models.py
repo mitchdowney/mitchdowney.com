@@ -9,6 +9,7 @@ class Project(models.Model):
     name = models.CharField(max_length=100)
     about = models.TextField(blank=True)
     license = models.CharField(max_length=100, blank=True)
+    license_link = models.URLField(blank=True)
     font_awesome_class = models.CharField(max_length=50, blank=True)
     
     
