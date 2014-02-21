@@ -48,9 +48,9 @@
         
         {% for projectLink in projectLinks %}
           {% ifequal projectLink.name project_name %}
-            &nbsp <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name|lower }}"><i class="fa {{ projectLink.font_awesome_class }}"></i></a>
+            &nbsp <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name.split|join:"-"|lower }}"><i class="fa {{ projectLink.font_awesome_class }}"></i></a>
           {% else %}
-            &nbsp <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name|lower }}-hover"><i class="fa {{ projectLink.font_awesome_class }}"></i></a>
+            &nbsp <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name.split|join:"-"|lower }}-hover"><i class="fa {{ projectLink.font_awesome_class }}"></i></a>
           {% endifequal %}
         {% endfor %}
     
