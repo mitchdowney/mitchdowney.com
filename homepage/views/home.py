@@ -19,6 +19,7 @@ def home(request):
             'license_link': project.license_link,
             'font_awesome_class': project.font_awesome_class,
             'id': project.id,
+            'datetime': project.datetime,
             
             # Todo, this url is hardcoded
             'first_item_url': '/items/{0}'.format(first_item.id)
