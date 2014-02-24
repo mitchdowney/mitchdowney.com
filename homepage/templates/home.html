@@ -10,7 +10,7 @@
       {% else %}
       "main-project">
       {% endif %}
-        <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name.split|join:"-"|lower }}-hover">
+        <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name.split|join:"-"|lower }}-hover js-{{ projectLink.id }}" >
           <div class="main-project-icon">
             <i class="fa {{ projectLink.font_awesome_class }} main-project-icon"></i>
           </div>
@@ -19,6 +19,9 @@
           </div>
           <div class="main-project-text">
             {{ projectLink.about }}
+          </div>
+          <div class="main-project-text">
+            <small>{{ projectLink.datetime|date:"F j Y" }}</small>
           </div>
         </a>
       </div>

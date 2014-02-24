@@ -21,7 +21,7 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
   <script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
   <script src="{% static 'js/bootstrap.js' %}"></script>
-
+  <script src="{% static 'js/base.js' %}"></script>
 </head>
   
 <body>
@@ -48,9 +48,9 @@
         
         {% for projectLink in projectLinks %}
           {% ifequal projectLink.name project_name %}
-            &nbsp <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name.split|join:'-'|lower }}"><i class="fa {{ projectLink.font_awesome_class }}"></i></a>
+            &nbsp <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name.split|join:'-'|lower }} js-{{ projectLink.id }}"><i class="fa {{ projectLink.font_awesome_class }}"></i></a>
           {% else %}
-            &nbsp <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name.split|join:'-'|lower }}-hover"><i class="fa {{ projectLink.font_awesome_class }}"></i></a>
+            &nbsp <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name.split|join:'-'|lower }}-hover js-{{ projectLink.id }}"><i class="fa {{ projectLink.font_awesome_class }}"></i></a>
           {% endifequal %}
         {% endfor %}
     
@@ -99,5 +99,13 @@
 </div><!-- /.md-container -->
 
 </body>
+
+<script type="text/javascript">
+    {% for projectLink in projectLinks %}
+        $( ".js-{{ projectLink.id }}" ).hover(function() {
+          $( ".js-{{ projectLink.id }}").toggleClass( "color-{{ projectLink.name.split|join:'-'|lower }}", 0 );
+        });
+    {% endfor %}
+</script>
 
 </html>
