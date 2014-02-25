@@ -260,7 +260,7 @@ a:hover {
     .main-project-icon {
         float:right;
         clear:right;
-        margin:5px 0;
+        margin:10px 0 10px 20px;
         font-size:64px;
     }
 }
