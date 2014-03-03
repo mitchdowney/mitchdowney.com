@@ -9,35 +9,11 @@
     <div class="main">
     
     <div class="main-top">
-      {% with item.get_previous_by_datetime as next %}
-        {% if next %}
-          <div class="main-next">
-            <a href="{{ next.get_absolute_url }}">Next ></a>
-          </div>
-        {% else %}
-          <div class="main-next">
-            <a>Next ></a>
-          </div>
-        {% endif %}
-      {% endwith %}
-
-      {% with item.get_next_by_datetime as prev %}
-        {% if prev %}
-          <div class="main-prev">
-            <a href="{{ prev.get_absolute_url }}">< Prev</a>
-          </div>
-        {% else %}
-          <div class="main-prev">
-            <a>< Prev</a>
-          </div>
-        {% endif %}
-
-      {% endwith %}
           
       <div class="main-headline color-{{ item.project.name.split|join:'-'|lower }}">
         {{ item.project.name }} &nbsp <i class="fa {{ item.project.font_awesome_class }} color-{{ item.name }}"></i>
       </div>
-      
+
       <div class="main-sub-headline">
         {{ item.name }}
       </div>
@@ -72,16 +48,45 @@
         <strong>License:</strong> <a href="{{ item.project.license_link }}">{{ item.project.license }}</a>
       </div>
       
-      <div class="main-info">
-        <strong><a href="{{ item.link }}" target="_blank">{{ item.link_text }}</a></strong>
-      </div>
-      
       </div><!-- /.main-top -->
       
       <div class="main-bottom">
+
+        {% with item.get_previous_by_datetime as next %}
+          {% if next %}
+            <div class="main-next">
+              <a href="{{ next.get_absolute_url }}">Next ></a>
+            </div>
+          {% else %}
+            <div class="main-next">
+              <a>Next ></a>
+            </div>
+          {% endif %}
+        {% endwith %}
+
+        {% with item.get_next_by_datetime as prev %}
+          {% if prev %}
+            <div class="main-prev">
+              <a href="{{ prev.get_absolute_url }}">< Prev</a>
+            </div>
+          {% else %}
+            <div class="main-prev">
+              <a>< Prev</a>
+            </div>
+          {% endif %}
+
+        {% endwith %}
+      
+        {% if item.link_text %}
+          <div class="main-button button-{{ item.project.name.split|join:'-'|lower }}">
+            <a href="{{ item.link }}" target="_blank">{{ item.link_text }}</a>
+          </div>
+        {% endif %}
+
         <div class="main-img">
           <a href="{{ item.image.url }}"><img class="img-responsive" src="{{ item.image.url }}"></a>
         </div>
+
       </div><!-- /.main-bottom -->
     </div><!-- /.main -->
   </div><!-- /.col-md-9 -->
