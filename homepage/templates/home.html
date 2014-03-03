@@ -2,40 +2,6 @@
 
 {% block main-div %}
 
-  <div class="col-md-9">
-
-    {% for projectLink in projectLinks %}
-      <div class= {% if forloop.first %}
-      "main-project-first">
-      {% else %}
-      "main-project">
-      {% endif %}
-        <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name.split|join:"-"|lower }}-hover js-{{ projectLink.id }}" >
-          <div class="main-project-icon">
-            <i class="fa {{ projectLink.font_awesome_class }} main-project-icon"></i>
-          </div>
-          <div class="main-project-title">
-            {{ projectLink.name }} 
-          </div>
-          <div class="main-project-text">
-            {{ projectLink.about }}
-          </div>
-          <div class="main-project-text">
-            <em><small>Updated: {{ projectLink.first_item_datetime|date:"F j Y" }}</small></em>
-          </div>
-        </a>
-      </div>
-    {% endfor %}
-    
-    <div class="clearfix">
-    </div>
-
-  </div><!-- /.col-md-9 main  -->
-  
-{% endblock %}
-
-{% block left-side-div %}
-
 <div class="col-md-3">
   <div class="sidebar-no-overflow">
     <div class="sidebar-title">
@@ -87,6 +53,40 @@
 
   </div><!-- /.sidebar-no-overflow -->
 </div><!-- /.col-md-3 -->
+  
+{% endblock %}
+
+{% block left-side-div %}
+
+  <div class="col-md-9">
+
+    {% for projectLink in projectLinks %}
+      <div class= {% if forloop.first %}
+      "main-project-first">
+      {% else %}
+      "main-project">
+      {% endif %}
+        <a href="{{ projectLink.first_item_url }}" class="color-{{ projectLink.name.split|join:"-"|lower }}-hover js-{{ projectLink.id }}" >
+          <div class="main-project-icon">
+            <i class="fa {{ projectLink.font_awesome_class }} main-project-icon"></i>
+          </div>
+          <div class="main-project-title">
+            {{ projectLink.name }} 
+          </div>
+          <div class="main-project-text">
+            {{ projectLink.about }}
+          </div>
+          <div class="main-project-text">
+            <em><small>Updated: {{ projectLink.first_item_datetime|date:"F j Y" }}</small></em>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+    
+    <div class="clearfix">
+    </div>
+
+  </div><!-- /.col-md-9 main  -->
 
 {% endblock %}
 
