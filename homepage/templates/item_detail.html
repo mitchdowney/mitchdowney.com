@@ -47,10 +47,6 @@
       <div class="main-info">
         <strong>License:</strong> <a href="{{ item.project.license_link }}">{{ item.project.license }}</a>
       </div>
-      
-      </div><!-- /.main-top -->
-      
-      <div class="main-bottom">
 
         {% with item.get_previous_by_datetime as next %}
           {% if next %}
@@ -82,6 +78,11 @@
             <a href="{{ item.link }}" target="_blank">{{ item.link_text }}</a>
           </div>
         {% endif %}
+        <div class="clearfix">
+        </div>
+      </div><!-- /.main-top -->
+      
+      <div class="main-bottom">
 
         <div class="main-img">
           <a href="{{ item.image.url }}"><img class="img-responsive" src="{{ item.image.url }}"></a>
