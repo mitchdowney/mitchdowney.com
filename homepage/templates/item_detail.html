@@ -117,10 +117,12 @@
           {% endwith %}
         </div><!-- /.main-bottom-nav -->
         
-        <div class="main-about">
-          <strong><big>About</big></strong><br />
-          {{ item.about }}
-        </div>
+        {% if item.about %}
+          <div class="main-about">
+            <strong><big>About</big></strong><br />
+            {{ item.about }}
+          </div>
+        {% endif %}
         
       </div><!-- /.main-bottom -->
     </div><!-- /.main -->
