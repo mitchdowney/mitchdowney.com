@@ -39,7 +39,7 @@ a:hover {
 }
 
 .header {
-    border-bottom:1px solid #303030;
+    border-bottom:1px dotted #303030;
 }
 
 .mitchdowney {
@@ -191,11 +191,11 @@ a:hover {
 }
 
 .main-button a {
-    color:#ddd;
+    color:#c7c7c7;
 }
 
 .main-button a:hover {
-    color:#fff;
+    color:#eee;
 }
 
 @media (max-width:991px) {
@@ -221,7 +221,6 @@ a:hover {
     .main-project-first {
         padding:10px 0 20px 0;
         font-size:32px;
-        border-bottom:1px dotted #303030;
         color:#c7c7c7;
         font-family:'Roboto', serif;
     }
@@ -229,11 +228,11 @@ a:hover {
 
 @media (min-width:992px) {
     .main-project-first {
+        margin:0 20px 0 0;
         padding:10px 0 20px 0;
         font-size:32px;
         color:#c7c7c7;
         font-family:'Roboto', serif;
-        border-bottom:1px dotted #303030;
     }
 }
 
@@ -241,7 +240,6 @@ a:hover {
     .main-project {
         padding:10px 0 20px 0;
         font-size:32px;
-        border-bottom:1px dotted #303030;
         color:#c7c7c7;
         font-family:'Roboto', serif;
     }
@@ -249,11 +247,11 @@ a:hover {
 
 @media (min-width:992px) {
     .main-project {
+        margin:0 20px 0 0;
         padding:10px 0 20px 0;
         font-size:32px;
         color:#c7c7c7;
         font-family:'Roboto', serif;
-        border-bottom:1px dotted #303030;
     }
 }
 
@@ -384,11 +382,11 @@ a:hover {
 }
 
 .button-everyvote {
-    background-color:#D54040;
+    background-color:#BF2B2B;
 }
 
 .button-everyvote:hover {
-    background-color:#DC6363;
+    background-color:#D54040;
 }
 
 .color-partystarter {
@@ -401,11 +399,11 @@ a:hover {
 }
 
 .button-partystarter {
-    background-color:#006B8E;
+    background-color:#00506A;
 }
 
 .button-partystarter:hover {
-    background-color:#008FBF;
+    background-color:#006B8E;
 }
 
 .color-earthhq {
@@ -418,11 +416,11 @@ a:hover {
 }
 
 .button-earthhq {
-    background-color:#6C9F20;
+    background-color:#547C18;
 }
 
 .button-earthhq:hover {
-    background-color:#91D52B;
+    background-color:#6C9F20;
 }
 
 .color-advantage-act {
@@ -435,11 +433,11 @@ a:hover {
 }
 
 .button-advantage-act {
-    background-color:#9F2048;
+    background-color:#7C1839;
 }
 
 .button-advantage-act:hover {
-    background-color:#D52B62;
+    background-color:#9F2048;
 }
 
 .color-top-video-timeline {
@@ -452,11 +450,11 @@ a:hover {
 }
 
 .button-top-video-timeline {
-    background-color:#B56400;
+    background-color:#9F5800;
 }
 
 .button-top-video-timeline:hover {
-    background-color:#DF7B00;
+    background-color:#B56400;
 }
 
 .color-twitter {

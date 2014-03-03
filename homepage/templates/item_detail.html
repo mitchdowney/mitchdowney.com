@@ -74,9 +74,11 @@
         {% endwith %}
       
         {% if item.link_text %}
-          <div class="main-button button-{{ item.project.name.split|join:'-'|lower }}">
-            <a href="{{ item.link }}" target="_blank">{{ item.link_text }}</a>
-          </div>
+          <a href="{{ item.link }}" target="_blank">
+            <div class="main-button button-{{ item.project.name.split|join:'-'|lower }}">
+              {{ item.link_text }}
+            </div>
+          </a>
         {% endif %}
         <div class="clearfix">
         </div>
