@@ -52,6 +52,7 @@ class Item(models.Model):
     types = models.ManyToManyField(Type, related_name='types', blank=True)
     link = models.URLField(blank=True)
     link_text = models.CharField(max_length=200, blank=True)
+    about = models.TextField(blank=True)
     
     class Meta:
         ordering = ['-datetime']

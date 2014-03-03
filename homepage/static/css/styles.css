@@ -217,6 +217,18 @@ a:hover {
 .main-img img {
 }
 
+.main-bottom-nav {
+    margin:20px 0;
+}
+
+.main-about {
+    margin:20px 0;
+    padding:20px;
+    background-color:#151515;
+    font-size:16px;
+    max-width:600px;
+}
+
 @media (max-width:991px) {
     .main-project-first {
         padding:10px 0 20px 0;
@@ -310,8 +322,6 @@ a:hover {
     .sidebar {
         margin:0 0 20px 0;
         color:#c7c7c7;
-        overflow:auto;
-        height:500px;
     }
 }
 
