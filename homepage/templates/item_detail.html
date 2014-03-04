@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 
-{% block title %}{{ item.project.name }} - {{ item.name }} - {{ item.datetime }}{% endblock %}
+{% block title %}{{ item.project.name }} - {{ item.name }} - {{ item.datetime|date:"F j Y" }}{% endblock %}
+
+{% block extrahead %}
+
+  <meta property="og:url" content="http://www.mitchdowney.com/items/{{ item.id }}" />
+  <meta property="og:title" content="{{ item.project.name }} - {{ item.name }} - {{ item.datetime|date:"F j Y" }}" />
+  <meta property="og:description" content="Free/Open Source UX Designer and Web Developer in the Chicagoland area." />
+  <meta property="og:image" content="{{ item.image.url }}" />
+
+{% endblock %}
 
 {% block main-div %}
   
