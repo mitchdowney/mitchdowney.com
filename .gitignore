@@ -1,9 +1,9 @@
 settings.py
 
-database.sqlite
+database.sqlite3
 3
 *.pyc
-
+google-analytics.js
 
 
 # Hide uploads folder
