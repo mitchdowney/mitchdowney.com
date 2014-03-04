@@ -159,7 +159,9 @@
         <div class="sidebar-item">
           {% for i in item.list reversed %}
             {% ifequal i current_item %}
-              <a href="/items/{{ i.id }}" style="color:#eee;">{{ i.name }}</a><br />
+              <div class="highlight">
+                <a href="/items/{{ i.id }}">{{ i.name }}</a><br />
+              </div>
             {% else %}
               <a href="/items/{{ i.id }}">{{ i.name }}</a><br />
             {% endifequal %}
