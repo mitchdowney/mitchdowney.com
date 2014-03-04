@@ -23,6 +23,11 @@
   <script src="{% static 'js/bootstrap.js' %}"></script>
   <script src="{% static 'js/base.js' %}"></script>
   <script src="{% static 'js/google-analytics.js' %}"></script>
+  
+  {% if GOOGLE_ANALYTICS_PROPERTY_ID %}
+    {% include "{% static 'js/google-analytics.js' %}" %}
+  {% endif %}
+  
 </head>
   
 <body>
