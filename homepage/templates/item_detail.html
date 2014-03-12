@@ -160,10 +160,10 @@
           {% for i in item.list reversed %}
             {% ifequal i current_item %}
               <div class="highlight">
-                <a href="/items/{{ i.id }}">{{ i.name }}</a><br />
+                <a href="/items/{{ i.id }}"><i class="fa {{ i.project.font_awesome_class }} color-{{ i.project.name.split|join:"-"|lower }} "></i> {{ i.name }}</a> <br />
               </div>
             {% else %}
-              <a href="/items/{{ i.id }}">{{ i.name }}</a><br />
+              <a href="/items/{{ i.id }}"><i class="fa {{ i.project.font_awesome_class }} color-{{ i.project.name.split|join:"-"|lower }} "></i> {{ i.name }}</a> <br />
             {% endifequal %}
           {% endfor %}
         </div>
